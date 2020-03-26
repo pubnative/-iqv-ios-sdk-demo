@@ -52,6 +52,7 @@
 		54D12EDB242D4DFA000B053F /* SceneDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
 		54D12EDC242D4DFA000B053F /* AdSdkDemoSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdSdkDemoSettings.m; sourceTree = "<group>"; };
 		54D12EE7242D4E8B000B053F /* HyBid.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = HyBid.framework; sourceTree = "<group>"; };
+		54D12EEC242D5451000B053F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +70,7 @@
 		54D12EA9242D4DB6000B053F = {
 			isa = PBXGroup;
 			children = (
+				54D12EEC242D5451000B053F /* README.md */,
 				54D12ED4242D4DF9000B053F /* AdSdkDemoSettings.h */,
 				54D12EDC242D4DFA000B053F /* AdSdkDemoSettings.m */,
 				54D12EDA242D4DFA000B053F /* AppDelegate.h */,
