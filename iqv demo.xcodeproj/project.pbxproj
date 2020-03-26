@@ -7,28 +7,51 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		54D12EB7242D4DB6000B053F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 54D12EB6242D4DB6000B053F /* AppDelegate.m */; };
-		54D12EBA242D4DB6000B053F /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 54D12EB9242D4DB6000B053F /* SceneDelegate.m */; };
-		54D12EBD242D4DB7000B053F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54D12EBC242D4DB7000B053F /* ViewController.m */; };
-		54D12EC0242D4DB7000B053F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54D12EBE242D4DB7000B053F /* Main.storyboard */; };
-		54D12EC2242D4DB9000B053F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54D12EC1242D4DB9000B053F /* Assets.xcassets */; };
-		54D12EC5242D4DB9000B053F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54D12EC3242D4DB9000B053F /* LaunchScreen.storyboard */; };
-		54D12EC8242D4DB9000B053F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 54D12EC7242D4DB9000B053F /* main.m */; };
+		54D12EDD242D4DFA000B053F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 54D12ED0242D4DF9000B053F /* AppDelegate.m */; };
+		54D12EDE242D4DFA000B053F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54D12ED1242D4DF9000B053F /* Assets.xcassets */; };
+		54D12EDF242D4DFA000B053F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 54D12ED2242D4DF9000B053F /* main.m */; };
+		54D12EE0242D4DFA000B053F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54D12ED3242D4DF9000B053F /* Main.storyboard */; };
+		54D12EE1242D4DFA000B053F /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54D12ED5242D4DF9000B053F /* FirstViewController.m */; };
+		54D12EE2242D4DFA000B053F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54D12ED6242D4DF9000B053F /* LaunchScreen.storyboard */; };
+		54D12EE4242D4DFA000B053F /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54D12ED9242D4DFA000B053F /* SecondViewController.m */; };
+		54D12EE5242D4DFA000B053F /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 54D12EDB242D4DFA000B053F /* SceneDelegate.m */; };
+		54D12EE6242D4DFA000B053F /* AdSdkDemoSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 54D12EDC242D4DFA000B053F /* AdSdkDemoSettings.m */; };
+		54D12EE9242D507C000B053F /* HyBid.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54D12EE7242D4E8B000B053F /* HyBid.framework */; };
+		54D12EEA242D507C000B053F /* HyBid.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 54D12EE7242D4E8B000B053F /* HyBid.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		54D12EEB242D507D000B053F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				54D12EEA242D507C000B053F /* HyBid.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		54D12EB2242D4DB6000B053F /* iqv demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iqv demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		54D12EB5242D4DB6000B053F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		54D12EB6242D4DB6000B053F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		54D12EB8242D4DB6000B053F /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
-		54D12EB9242D4DB6000B053F /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		54D12EBB242D4DB6000B053F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		54D12EBC242D4DB7000B053F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		54D12EBF242D4DB7000B053F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		54D12EC1242D4DB9000B053F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		54D12EC4242D4DB9000B053F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		54D12EC6242D4DB9000B053F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		54D12EC7242D4DB9000B053F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		54D12ECE242D4DF9000B053F /* SceneDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		54D12ECF242D4DF9000B053F /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		54D12ED0242D4DF9000B053F /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		54D12ED1242D4DF9000B053F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		54D12ED2242D4DF9000B053F /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		54D12ED3242D4DF9000B053F /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		54D12ED4242D4DF9000B053F /* AdSdkDemoSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdSdkDemoSettings.h; sourceTree = "<group>"; };
+		54D12ED5242D4DF9000B053F /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		54D12ED6242D4DF9000B053F /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		54D12ED7242D4DF9000B053F /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		54D12ED8242D4DFA000B053F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		54D12ED9242D4DFA000B053F /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		54D12EDA242D4DFA000B053F /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		54D12EDB242D4DFA000B053F /* SceneDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		54D12EDC242D4DFA000B053F /* AdSdkDemoSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdSdkDemoSettings.m; sourceTree = "<group>"; };
+		54D12EE7242D4E8B000B053F /* HyBid.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = HyBid.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54D12EE9242D507C000B053F /* HyBid.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,8 +69,23 @@
 		54D12EA9242D4DB6000B053F = {
 			isa = PBXGroup;
 			children = (
-				54D12EB4242D4DB6000B053F /* iqv demo */,
+				54D12ED4242D4DF9000B053F /* AdSdkDemoSettings.h */,
+				54D12EDC242D4DFA000B053F /* AdSdkDemoSettings.m */,
+				54D12EDA242D4DFA000B053F /* AppDelegate.h */,
+				54D12ED0242D4DF9000B053F /* AppDelegate.m */,
+				54D12ED1242D4DF9000B053F /* Assets.xcassets */,
+				54D12ECF242D4DF9000B053F /* FirstViewController.h */,
+				54D12ED5242D4DF9000B053F /* FirstViewController.m */,
+				54D12ED8242D4DFA000B053F /* Info.plist */,
+				54D12ED6242D4DF9000B053F /* LaunchScreen.storyboard */,
+				54D12ED2242D4DF9000B053F /* main.m */,
+				54D12ED3242D4DF9000B053F /* Main.storyboard */,
+				54D12ECE242D4DF9000B053F /* SceneDelegate.h */,
+				54D12EDB242D4DFA000B053F /* SceneDelegate.m */,
+				54D12ED7242D4DF9000B053F /* SecondViewController.h */,
+				54D12ED9242D4DFA000B053F /* SecondViewController.m */,
 				54D12EB3242D4DB6000B053F /* Products */,
+				54D12EE7242D4E8B000B053F /* HyBid.framework */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,24 +95,6 @@
 				54D12EB2242D4DB6000B053F /* iqv demo.app */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		54D12EB4242D4DB6000B053F /* iqv demo */ = {
-			isa = PBXGroup;
-			children = (
-				54D12EB5242D4DB6000B053F /* AppDelegate.h */,
-				54D12EB6242D4DB6000B053F /* AppDelegate.m */,
-				54D12EB8242D4DB6000B053F /* SceneDelegate.h */,
-				54D12EB9242D4DB6000B053F /* SceneDelegate.m */,
-				54D12EBB242D4DB6000B053F /* ViewController.h */,
-				54D12EBC242D4DB7000B053F /* ViewController.m */,
-				54D12EBE242D4DB7000B053F /* Main.storyboard */,
-				54D12EC1242D4DB9000B053F /* Assets.xcassets */,
-				54D12EC3242D4DB9000B053F /* LaunchScreen.storyboard */,
-				54D12EC6242D4DB9000B053F /* Info.plist */,
-				54D12EC7242D4DB9000B053F /* main.m */,
-			);
-			path = "iqv demo";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -86,6 +107,7 @@
 				54D12EAE242D4DB6000B053F /* Sources */,
 				54D12EAF242D4DB6000B053F /* Frameworks */,
 				54D12EB0242D4DB6000B053F /* Resources */,
+				54D12EEB242D507D000B053F /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,9 +155,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				54D12EC5242D4DB9000B053F /* LaunchScreen.storyboard in Resources */,
-				54D12EC2242D4DB9000B053F /* Assets.xcassets in Resources */,
-				54D12EC0242D4DB7000B053F /* Main.storyboard in Resources */,
+				54D12EE2242D4DFA000B053F /* LaunchScreen.storyboard in Resources */,
+				54D12EDE242D4DFA000B053F /* Assets.xcassets in Resources */,
+				54D12EE0242D4DFA000B053F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,33 +168,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				54D12EBD242D4DB7000B053F /* ViewController.m in Sources */,
-				54D12EB7242D4DB6000B053F /* AppDelegate.m in Sources */,
-				54D12EC8242D4DB9000B053F /* main.m in Sources */,
-				54D12EBA242D4DB6000B053F /* SceneDelegate.m in Sources */,
+				54D12EE4242D4DFA000B053F /* SecondViewController.m in Sources */,
+				54D12EE6242D4DFA000B053F /* AdSdkDemoSettings.m in Sources */,
+				54D12EDF242D4DFA000B053F /* main.m in Sources */,
+				54D12EE5242D4DFA000B053F /* SceneDelegate.m in Sources */,
+				54D12EE1242D4DFA000B053F /* FirstViewController.m in Sources */,
+				54D12EDD242D4DFA000B053F /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		54D12EBE242D4DB7000B053F /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				54D12EBF242D4DB7000B053F /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		54D12EC3242D4DB9000B053F /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				54D12EC4242D4DB9000B053F /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		54D12EC9242D4DB9000B053F /* Debug */ = {
@@ -289,15 +294,22 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TL55SBB4FM;
-				INFOPLIST_FILE = "iqv demo/Info.plist";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "net.pubnative.iqv-demo";
+				PRODUCT_BUNDLE_IDENTIFIER = net.pubnative.iqvdemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -306,15 +318,22 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TL55SBB4FM;
-				INFOPLIST_FILE = "iqv demo/Info.plist";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "net.pubnative.iqv-demo";
+				PRODUCT_BUNDLE_IDENTIFIER = net.pubnative.iqvdemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
