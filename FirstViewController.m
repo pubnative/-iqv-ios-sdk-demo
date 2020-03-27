@@ -28,7 +28,7 @@
 }
 
 - (void)requestAd {
-    self.bannerAdView.adSize = SIZE_320x50;
+    self.bannerAdView.adSize = HyBidAdSize.SIZE_320x50;
     [self.bannerAdView loadWithDelegate:self];
 }
 
@@ -51,6 +51,7 @@
 
 - (void)adViewDidLoad:(HyBidAdView *)adView {
     NSLog(@"Banner Ad View did load:");
+    [adView show];
 }
 
 - (void)adView:(HyBidAdView *)adView didFailWithError:(NSError *)error {
