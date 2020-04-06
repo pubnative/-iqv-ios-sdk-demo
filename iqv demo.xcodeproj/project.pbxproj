@@ -7,17 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		54B6455F242EA7FB0036EF46 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54B64550242EA7F90036EF46 /* FirstViewController.m */; };
-		54B64560242EA7FB0036EF46 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54B64551242EA7FA0036EF46 /* LaunchScreen.storyboard */; };
-		54B64561242EA7FB0036EF46 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 54B64552242EA7FA0036EF46 /* AppDelegate.m */; };
-		54B64563242EA7FB0036EF46 /* AdSdkDemoSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 54B64554242EA7FA0036EF46 /* AdSdkDemoSettings.m */; };
-		54B64564242EA7FB0036EF46 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 54B64558242EA7FA0036EF46 /* SceneDelegate.m */; };
-		54B64565242EA7FB0036EF46 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54B64559242EA7FA0036EF46 /* SecondViewController.m */; };
-		54B64566242EA7FB0036EF46 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 54B6455A242EA7FA0036EF46 /* main.m */; };
-		54B64567242EA7FB0036EF46 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54B6455B242EA7FA0036EF46 /* Assets.xcassets */; };
-		54B64568242EA7FB0036EF46 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54B6455D242EA7FA0036EF46 /* Main.storyboard */; };
-		54B64569242EA8640036EF46 /* HyBid.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54B64518242EA51E0036EF46 /* HyBid.framework */; };
-		54B6456A242EA8640036EF46 /* HyBid.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 54B64518242EA51E0036EF46 /* HyBid.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		54E93DDF243BC68200178BBF /* HyBid.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54E93DDD243BC67C00178BBF /* HyBid.framework */; };
+		54E93DE0243BC68200178BBF /* HyBid.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 54E93DDD243BC67C00178BBF /* HyBid.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		54E93E10243BCA0200178BBF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E93DFF243BCA0100178BBF /* main.m */; };
+		54E93E11243BCA0200178BBF /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E93E01243BCA0100178BBF /* SceneDelegate.m */; };
+		54E93E12243BCA0200178BBF /* AdSdkDemoSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E93E02243BCA0100178BBF /* AdSdkDemoSettings.m */; };
+		54E93E13243BCA0200178BBF /* BannerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E93E04243BCA0100178BBF /* BannerViewController.m */; };
+		54E93E14243BCA0200178BBF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E93E07243BCA0100178BBF /* AppDelegate.m */; };
+		54E93E16243BCA0200178BBF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54E93E09243BCA0200178BBF /* Assets.xcassets */; };
+		54E93E17243BCA0200178BBF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54E93E0A243BCA0200178BBF /* Main.storyboard */; };
+		54E93E18243BCA0200178BBF /* InterstitialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E93E0B243BCA0200178BBF /* InterstitialViewController.m */; };
+		54E93E19243BCA0200178BBF /* MRectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E93E0E243BCA0200178BBF /* MRectViewController.m */; };
+		54E93E1A243BCA0200178BBF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54E93E0F243BCA0200178BBF /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,7 +28,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				54B6456A242EA8640036EF46 /* HyBid.framework in Embed Frameworks */,
+				54E93DE0243BC68200178BBF /* HyBid.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -35,24 +36,27 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		54B64518242EA51E0036EF46 /* HyBid.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = HyBid.framework; sourceTree = "<group>"; };
-		54B64550242EA7F90036EF46 /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
-		54B64551242EA7FA0036EF46 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
-		54B64552242EA7FA0036EF46 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		54B64553242EA7FA0036EF46 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		54B64554242EA7FA0036EF46 /* AdSdkDemoSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdSdkDemoSettings.m; sourceTree = "<group>"; };
-		54B64555242EA7FA0036EF46 /* AdSdkDemoSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdSdkDemoSettings.h; sourceTree = "<group>"; };
-		54B64556242EA7FA0036EF46 /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		54B64557242EA7FA0036EF46 /* SceneDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
-		54B64558242EA7FA0036EF46 /* SceneDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		54B64559242EA7FA0036EF46 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
-		54B6455A242EA7FA0036EF46 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		54B6455B242EA7FA0036EF46 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		54B6455C242EA7FA0036EF46 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		54B6455D242EA7FA0036EF46 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		54B6455E242EA7FB0036EF46 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
 		54D12EB2242D4DB6000B053F /* iqv demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iqv demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		54D12EEC242D5451000B053F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		54E93DDD243BC67C00178BBF /* HyBid.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = HyBid.framework; sourceTree = "<group>"; };
+		54E93DFF243BCA0100178BBF /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		54E93E00243BCA0100178BBF /* SceneDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		54E93E01243BCA0100178BBF /* SceneDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		54E93E02243BCA0100178BBF /* AdSdkDemoSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdSdkDemoSettings.m; sourceTree = "<group>"; };
+		54E93E03243BCA0100178BBF /* InterstitialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InterstitialViewController.h; sourceTree = "<group>"; };
+		54E93E04243BCA0100178BBF /* BannerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BannerViewController.m; sourceTree = "<group>"; };
+		54E93E05243BCA0100178BBF /* BannerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BannerViewController.h; sourceTree = "<group>"; };
+		54E93E06243BCA0100178BBF /* MRectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRectViewController.h; sourceTree = "<group>"; };
+		54E93E07243BCA0100178BBF /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		54E93E08243BCA0100178BBF /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../pubnative-hybid-ios-sdk/PubnativeLite/AdSDK Demo/Info.plist"; sourceTree = "<group>"; };
+		54E93E09243BCA0200178BBF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		54E93E0A243BCA0200178BBF /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		54E93E0B243BCA0200178BBF /* InterstitialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InterstitialViewController.m; sourceTree = "<group>"; };
+		54E93E0C243BCA0200178BBF /* AdSdkDemoSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdSdkDemoSettings.h; sourceTree = "<group>"; };
+		54E93E0D243BCA0200178BBF /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		54E93E0E243BCA0200178BBF /* MRectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRectViewController.m; sourceTree = "<group>"; };
+		54E93E0F243BCA0200178BBF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				54B64569242EA8640036EF46 /* HyBid.framework in Frameworks */,
+				54E93DDF243BC68200178BBF /* HyBid.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,24 +74,27 @@
 		54D12EA9242D4DB6000B053F = {
 			isa = PBXGroup;
 			children = (
+				54E93E0C243BCA0200178BBF /* AdSdkDemoSettings.h */,
+				54E93E02243BCA0100178BBF /* AdSdkDemoSettings.m */,
+				54E93E0D243BCA0200178BBF /* AppDelegate.h */,
+				54E93E07243BCA0100178BBF /* AppDelegate.m */,
+				54E93E09243BCA0200178BBF /* Assets.xcassets */,
+				54E93E05243BCA0100178BBF /* BannerViewController.h */,
+				54E93E04243BCA0100178BBF /* BannerViewController.m */,
+				54E93E08243BCA0100178BBF /* Info.plist */,
+				54E93E03243BCA0100178BBF /* InterstitialViewController.h */,
+				54E93E0B243BCA0200178BBF /* InterstitialViewController.m */,
+				54E93E0F243BCA0200178BBF /* LaunchScreen.storyboard */,
+				54E93DFF243BCA0100178BBF /* main.m */,
+				54E93E0A243BCA0200178BBF /* Main.storyboard */,
+				54E93E06243BCA0100178BBF /* MRectViewController.h */,
+				54E93E0E243BCA0200178BBF /* MRectViewController.m */,
+				54E93E00243BCA0100178BBF /* SceneDelegate.h */,
+				54E93E01243BCA0100178BBF /* SceneDelegate.m */,
 				54D12EEC242D5451000B053F /* README.md */,
-				54B64555242EA7FA0036EF46 /* AdSdkDemoSettings.h */,
-				54B64554242EA7FA0036EF46 /* AdSdkDemoSettings.m */,
-				54B6455C242EA7FA0036EF46 /* AppDelegate.h */,
-				54B64552242EA7FA0036EF46 /* AppDelegate.m */,
-				54B6455B242EA7FA0036EF46 /* Assets.xcassets */,
-				54B64556242EA7FA0036EF46 /* FirstViewController.h */,
-				54B64550242EA7F90036EF46 /* FirstViewController.m */,
 				54B64553242EA7FA0036EF46 /* Info.plist */,
-				54B64551242EA7FA0036EF46 /* LaunchScreen.storyboard */,
-				54B6455A242EA7FA0036EF46 /* main.m */,
-				54B6455D242EA7FA0036EF46 /* Main.storyboard */,
-				54B64557242EA7FA0036EF46 /* SceneDelegate.h */,
-				54B64558242EA7FA0036EF46 /* SceneDelegate.m */,
-				54B6455E242EA7FB0036EF46 /* SecondViewController.h */,
-				54B64559242EA7FA0036EF46 /* SecondViewController.m */,
 				54D12EB3242D4DB6000B053F /* Products */,
-				54B64518242EA51E0036EF46 /* HyBid.framework */,
+				54E93DDD243BC67C00178BBF /* HyBid.framework */,
 			);
 			sourceTree = "<group>";
 		};
@@ -157,9 +164,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				54B64567242EA7FB0036EF46 /* Assets.xcassets in Resources */,
-				54B64560242EA7FB0036EF46 /* LaunchScreen.storyboard in Resources */,
-				54B64568242EA7FB0036EF46 /* Main.storyboard in Resources */,
+				54E93E17243BCA0200178BBF /* Main.storyboard in Resources */,
+				54E93E1A243BCA0200178BBF /* LaunchScreen.storyboard in Resources */,
+				54E93E16243BCA0200178BBF /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -170,12 +177,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				54B64565242EA7FB0036EF46 /* SecondViewController.m in Sources */,
-				54B64561242EA7FB0036EF46 /* AppDelegate.m in Sources */,
-				54B64563242EA7FB0036EF46 /* AdSdkDemoSettings.m in Sources */,
-				54B6455F242EA7FB0036EF46 /* FirstViewController.m in Sources */,
-				54B64566242EA7FB0036EF46 /* main.m in Sources */,
-				54B64564242EA7FB0036EF46 /* SceneDelegate.m in Sources */,
+				54E93E10243BCA0200178BBF /* main.m in Sources */,
+				54E93E19243BCA0200178BBF /* MRectViewController.m in Sources */,
+				54E93E12243BCA0200178BBF /* AdSdkDemoSettings.m in Sources */,
+				54E93E13243BCA0200178BBF /* BannerViewController.m in Sources */,
+				54E93E11243BCA0200178BBF /* SceneDelegate.m in Sources */,
+				54E93E18243BCA0200178BBF /* InterstitialViewController.m in Sources */,
+				54E93E14243BCA0200178BBF /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

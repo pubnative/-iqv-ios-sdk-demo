@@ -40,8 +40,6 @@
 @property (nonatomic, strong) HyBidAdSize *adSize;
 
 - (void)setIntegrationType:(IntegrationType)integrationType withZoneID:(NSString *)zoneID;
-- (void)setIntegrationType:(IntegrationType)integrationType;
 - (void)requestAdWithDelegate:(NSObject<HyBidAdRequestDelegate> *)delegate withZoneID:(NSString *)zoneID;
-- (void)requestAdWithDelegate:(NSObject<HyBidAdRequestDelegate> *)delegate;
 
 @end

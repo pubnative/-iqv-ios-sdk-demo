@@ -149,15 +149,23 @@ Objective-C:
     }];
 ```
 
+## Change configuration at runtime
+
+If you have to reconfigure HyBid SDK at runtime you can call reconfigure with new parameters. These will be used from the next ad requests onwards
+
+```[HyBid reconfigure:<#(NSString *)#> withPartnerKeyword:<#(NSString *)#> completion:<#^(BOOL)completion#>];
+```
+
+
 ## HyBid Banner and MRECT Ads
 
 Banner Ads will be rendered using the HyBid SDK.
 
 Please see the enclosed example app for details on how to use this feature.
 
-A simple Banner example is implemented in `FirstViewController.m`
-A simple MRECT example is implemented in `SecondViewController.m`
+A simple Banner example is implemented in `BannerViewController.m`
+A simple MRECT example is implemented in `MRectViewController.m`
 
 ## Interstitials and full screen video
 
-This feature will be available in an upcoming version of this SDK.
+An interstitial example is implemented in `InterstitialViewController.m`
