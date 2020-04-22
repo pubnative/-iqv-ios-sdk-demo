@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		54E93DDF243BC68200178BBF /* HyBid.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54E93DDD243BC67C00178BBF /* HyBid.framework */; };
-		54E93DE0243BC68200178BBF /* HyBid.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 54E93DDD243BC67C00178BBF /* HyBid.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		54E93E10243BCA0200178BBF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E93DFF243BCA0100178BBF /* main.m */; };
 		54E93E11243BCA0200178BBF /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E93E01243BCA0100178BBF /* SceneDelegate.m */; };
 		54E93E12243BCA0200178BBF /* AdSdkDemoSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E93E02243BCA0100178BBF /* AdSdkDemoSettings.m */; };
@@ -19,6 +17,8 @@
 		54E93E18243BCA0200178BBF /* InterstitialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E93E0B243BCA0200178BBF /* InterstitialViewController.m */; };
 		54E93E19243BCA0200178BBF /* MRectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E93E0E243BCA0200178BBF /* MRectViewController.m */; };
 		54E93E1A243BCA0200178BBF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54E93E0F243BCA0200178BBF /* LaunchScreen.storyboard */; };
+		7EEB021924504237000C4126 /* HyBid.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EEB021824504237000C4126 /* HyBid.framework */; };
+		7EEB021A24504240000C4126 /* HyBid.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7EEB021824504237000C4126 /* HyBid.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,7 +28,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				54E93DE0243BC68200178BBF /* HyBid.framework in Embed Frameworks */,
+				7EEB021A24504240000C4126 /* HyBid.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -39,7 +39,6 @@
 		54B64553242EA7FA0036EF46 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		54D12EB2242D4DB6000B053F /* iqv demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iqv demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		54D12EEC242D5451000B053F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		54E93DDD243BC67C00178BBF /* HyBid.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = HyBid.framework; sourceTree = "<group>"; };
 		54E93DFF243BCA0100178BBF /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		54E93E00243BCA0100178BBF /* SceneDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		54E93E01243BCA0100178BBF /* SceneDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
@@ -57,6 +56,7 @@
 		54E93E0D243BCA0200178BBF /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		54E93E0E243BCA0200178BBF /* MRectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRectViewController.m; sourceTree = "<group>"; };
 		54E93E0F243BCA0200178BBF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7EEB021824504237000C4126 /* HyBid.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = HyBid.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,7 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				54E93DDF243BC68200178BBF /* HyBid.framework in Frameworks */,
+				7EEB021924504237000C4126 /* HyBid.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,7 +94,7 @@
 				54D12EEC242D5451000B053F /* README.md */,
 				54B64553242EA7FA0036EF46 /* Info.plist */,
 				54D12EB3242D4DB6000B053F /* Products */,
-				54E93DDD243BC67C00178BBF /* HyBid.framework */,
+				7EEB021824504237000C4126 /* HyBid.framework */,
 			);
 			sourceTree = "<group>";
 		};

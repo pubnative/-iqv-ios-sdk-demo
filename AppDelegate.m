@@ -35,6 +35,9 @@
 
      */
     
+    // Setting CCPA
+    [[VWAdLibrary shared] setIABUSPrivacyString:@"1YYN"];
+    
     return YES;
 }
 

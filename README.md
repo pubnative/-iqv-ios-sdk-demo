@@ -149,6 +149,43 @@ Objective-C:
     }];
 ```
 
+### CCPA Support
+
+1. to set the U.S. Privacy String use setIABUSPrivacyString method, e.g.
+
+Objective-C
+
+```[[VWAdLibrary shared] setIABUSPrivacyString:@"1YYN"];
+```
+
+Swift
+
+```VWAdLibrary.shared().setIABUSPrivacyString("1YYN")
+```
+
+2. To read the stored value, use getIABUSPrivacyString method, e.g.
+
+Objective-C
+
+```NSString *storedUSPrivacyString = [[VWAdLibrary shared] getIABUSPrivacyString];
+```
+Swift
+
+```let storedUSPrivacyString = VWAdLibrary.shared().getIABUSPrivacyString()
+```
+
+3. To remove the stored value, use removeIABUSPrivacyString method, e.g.
+
+Objective-C
+
+```[[VWAdLibrary shared] removeIABUSPrivacyString];
+```
+
+Swift
+
+```VWAdLibrary.shared().removeIABUSPrivacyString()
+```
+
 ## Change configuration at runtime
 
 If you have to reconfigure HyBid SDK at runtime you can call reconfigure with new parameters. These will be used from the next ad requests onwards
