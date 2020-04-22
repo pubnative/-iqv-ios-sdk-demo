@@ -155,42 +155,49 @@ Objective-C:
 
 Objective-C
 
-```[[VWAdLibrary shared] setIABUSPrivacyString:@"1YYN"];
+```
+[[VWAdLibrary shared] setIABUSPrivacyString:@"1YYN"];
 ```
 
 Swift
 
-```VWAdLibrary.shared().setIABUSPrivacyString("1YYN")
+```
+VWAdLibrary.shared().setIABUSPrivacyString("1YYN")
 ```
 
 2. To read the stored value, use getIABUSPrivacyString method, e.g.
 
 Objective-C
 
-```NSString *storedUSPrivacyString = [[VWAdLibrary shared] getIABUSPrivacyString];
+```
+NSString *storedUSPrivacyString = [[VWAdLibrary shared] getIABUSPrivacyString];
 ```
 Swift
 
-```let storedUSPrivacyString = VWAdLibrary.shared().getIABUSPrivacyString()
+```
+let storedUSPrivacyString = VWAdLibrary.shared().getIABUSPrivacyString()
 ```
 
 3. To remove the stored value, use removeIABUSPrivacyString method, e.g.
 
 Objective-C
 
-```[[VWAdLibrary shared] removeIABUSPrivacyString];
+```
+[[VWAdLibrary shared] removeIABUSPrivacyString];
 ```
 
 Swift
 
-```VWAdLibrary.shared().removeIABUSPrivacyString()
+```
+VWAdLibrary.shared().removeIABUSPrivacyString()
 ```
 
 ## Change configuration at runtime
 
 If you have to reconfigure HyBid SDK at runtime you can call reconfigure with new parameters. These will be used from the next ad requests onwards
 
-```[HyBid reconfigure:<#(NSString *)#> withPartnerKeyword:<#(NSString *)#> completion:<#^(BOOL)completion#>];
+```
+[HyBid reconfigure:<#(NSString *)#> withPartnerKeyword:<#(NSString *)#> completion:<#^(BOOL)completion#>];
 ```
 
 
