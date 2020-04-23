@@ -17,9 +17,9 @@
 		54E93E18243BCA0200178BBF /* InterstitialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E93E0B243BCA0200178BBF /* InterstitialViewController.m */; };
 		54E93E19243BCA0200178BBF /* MRectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E93E0E243BCA0200178BBF /* MRectViewController.m */; };
 		54E93E1A243BCA0200178BBF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54E93E0F243BCA0200178BBF /* LaunchScreen.storyboard */; };
-		7ED8F00D245186A700CBC399 /* iqv.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7ED8F00B245186A500CBC399 /* iqv.bundle */; };
-		7ED8F01D24518CB800CBC399 /* HyBidStatic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ED8F00C245186A700CBC399 /* HyBidStatic.framework */; };
 		7ED8F02024518CBA00CBC399 /* OMSDK_Pubnativenet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ED8F0132451875D00CBC399 /* OMSDK_Pubnativenet.framework */; };
+		7ED8F0402451FA1700CBC399 /* HyBidStatic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ED8F03E2451FA1700CBC399 /* HyBidStatic.framework */; };
+		7ED8F0412451FA1700CBC399 /* iqv.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7ED8F03F2451FA1700CBC399 /* iqv.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,9 +43,9 @@
 		54E93E0D243BCA0200178BBF /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		54E93E0E243BCA0200178BBF /* MRectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRectViewController.m; sourceTree = "<group>"; };
 		54E93E0F243BCA0200178BBF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
-		7ED8F00B245186A500CBC399 /* iqv.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = iqv.bundle; sourceTree = "<group>"; };
-		7ED8F00C245186A700CBC399 /* HyBidStatic.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = HyBidStatic.framework; sourceTree = "<group>"; };
 		7ED8F0132451875D00CBC399 /* OMSDK_Pubnativenet.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OMSDK_Pubnativenet.framework; sourceTree = "<group>"; };
+		7ED8F03E2451FA1700CBC399 /* HyBidStatic.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = HyBidStatic.framework; sourceTree = "<group>"; };
+		7ED8F03F2451FA1700CBC399 /* iqv.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = iqv.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,7 +54,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7ED8F02024518CBA00CBC399 /* OMSDK_Pubnativenet.framework in Frameworks */,
-				7ED8F01D24518CB800CBC399 /* HyBidStatic.framework in Frameworks */,
+				7ED8F0402451FA1700CBC399 /* HyBidStatic.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,9 +107,9 @@
 		7ED8F01B24518C2200CBC399 /* HyBid */ = {
 			isa = PBXGroup;
 			children = (
-				7ED8F00B245186A500CBC399 /* iqv.bundle */,
+				7ED8F03E2451FA1700CBC399 /* HyBidStatic.framework */,
+				7ED8F03F2451FA1700CBC399 /* iqv.bundle */,
 				7ED8F0132451875D00CBC399 /* OMSDK_Pubnativenet.framework */,
-				7ED8F00C245186A700CBC399 /* HyBidStatic.framework */,
 			);
 			path = HyBid;
 			sourceTree = "<group>";
@@ -173,7 +173,7 @@
 			files = (
 				54E93E17243BCA0200178BBF /* Main.storyboard in Resources */,
 				54E93E1A243BCA0200178BBF /* LaunchScreen.storyboard in Resources */,
-				7ED8F00D245186A700CBC399 /* iqv.bundle in Resources */,
+				7ED8F0412451FA1700CBC399 /* iqv.bundle in Resources */,
 				54E93E16243BCA0200178BBF /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
