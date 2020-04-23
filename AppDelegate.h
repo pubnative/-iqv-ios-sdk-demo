@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <HyBid/HyBid.h>
+#import <HyBidStatic/HyBidStatic.h>
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 

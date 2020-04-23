@@ -17,23 +17,10 @@
 		54E93E18243BCA0200178BBF /* InterstitialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E93E0B243BCA0200178BBF /* InterstitialViewController.m */; };
 		54E93E19243BCA0200178BBF /* MRectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E93E0E243BCA0200178BBF /* MRectViewController.m */; };
 		54E93E1A243BCA0200178BBF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54E93E0F243BCA0200178BBF /* LaunchScreen.storyboard */; };
-		7EEB021924504237000C4126 /* HyBid.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EEB021824504237000C4126 /* HyBid.framework */; };
-		7EEB021A24504240000C4126 /* HyBid.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7EEB021824504237000C4126 /* HyBid.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7ED8F00D245186A700CBC399 /* iqv.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7ED8F00B245186A500CBC399 /* iqv.bundle */; };
+		7ED8F01D24518CB800CBC399 /* HyBidStatic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ED8F00C245186A700CBC399 /* HyBidStatic.framework */; };
+		7ED8F02024518CBA00CBC399 /* OMSDK_Pubnativenet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ED8F0132451875D00CBC399 /* OMSDK_Pubnativenet.framework */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		54D12EEB242D507D000B053F /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				7EEB021A24504240000C4126 /* HyBid.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		54B64553242EA7FA0036EF46 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -56,7 +43,9 @@
 		54E93E0D243BCA0200178BBF /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		54E93E0E243BCA0200178BBF /* MRectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRectViewController.m; sourceTree = "<group>"; };
 		54E93E0F243BCA0200178BBF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
-		7EEB021824504237000C4126 /* HyBid.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = HyBid.framework; sourceTree = "<group>"; };
+		7ED8F00B245186A500CBC399 /* iqv.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = iqv.bundle; sourceTree = "<group>"; };
+		7ED8F00C245186A700CBC399 /* HyBidStatic.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = HyBidStatic.framework; sourceTree = "<group>"; };
+		7ED8F0132451875D00CBC399 /* OMSDK_Pubnativenet.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OMSDK_Pubnativenet.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,7 +53,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7EEB021924504237000C4126 /* HyBid.framework in Frameworks */,
+				7ED8F02024518CBA00CBC399 /* OMSDK_Pubnativenet.framework in Frameworks */,
+				7ED8F01D24518CB800CBC399 /* HyBidStatic.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +64,7 @@
 		54D12EA9242D4DB6000B053F = {
 			isa = PBXGroup;
 			children = (
+				7ED8F01B24518C2200CBC399 /* HyBid */,
 				54E93E0C243BCA0200178BBF /* AdSdkDemoSettings.h */,
 				54E93E02243BCA0100178BBF /* AdSdkDemoSettings.m */,
 				54E93E0D243BCA0200178BBF /* AppDelegate.h */,
@@ -94,7 +85,7 @@
 				54D12EEC242D5451000B053F /* README.md */,
 				54B64553242EA7FA0036EF46 /* Info.plist */,
 				54D12EB3242D4DB6000B053F /* Products */,
-				7EEB021824504237000C4126 /* HyBid.framework */,
+				7ED8F010245186FA00CBC399 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -104,6 +95,23 @@
 				54D12EB2242D4DB6000B053F /* iqv demo.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		7ED8F010245186FA00CBC399 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7ED8F01B24518C2200CBC399 /* HyBid */ = {
+			isa = PBXGroup;
+			children = (
+				7ED8F00B245186A500CBC399 /* iqv.bundle */,
+				7ED8F0132451875D00CBC399 /* OMSDK_Pubnativenet.framework */,
+				7ED8F00C245186A700CBC399 /* HyBidStatic.framework */,
+			);
+			path = HyBid;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -116,7 +124,6 @@
 				54D12EAE242D4DB6000B053F /* Sources */,
 				54D12EAF242D4DB6000B053F /* Frameworks */,
 				54D12EB0242D4DB6000B053F /* Resources */,
-				54D12EEB242D507D000B053F /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -166,6 +173,7 @@
 			files = (
 				54E93E17243BCA0200178BBF /* Main.storyboard in Resources */,
 				54E93E1A243BCA0200178BBF /* LaunchScreen.storyboard in Resources */,
+				7ED8F00D245186A700CBC399 /* iqv.bundle in Resources */,
 				54E93E16243BCA0200178BBF /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -310,12 +318,17 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/HyBid",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lxml2",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = net.pubnative.iqvdemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -334,12 +347,17 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/HyBid",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lxml2",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = net.pubnative.iqvdemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
