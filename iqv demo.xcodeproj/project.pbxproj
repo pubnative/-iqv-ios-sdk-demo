@@ -17,6 +17,7 @@
 		54E93E18243BCA0200178BBF /* InterstitialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E93E0B243BCA0200178BBF /* InterstitialViewController.m */; };
 		54E93E19243BCA0200178BBF /* MRectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E93E0E243BCA0200178BBF /* MRectViewController.m */; };
 		54E93E1A243BCA0200178BBF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54E93E0F243BCA0200178BBF /* LaunchScreen.storyboard */; };
+		7E6349E02488FE8000B30DFE /* VideoInterstitialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E6349DF2488FE8000B30DFE /* VideoInterstitialViewController.m */; };
 		7ED8F02024518CBA00CBC399 /* OMSDK_Pubnativenet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ED8F0132451875D00CBC399 /* OMSDK_Pubnativenet.framework */; };
 		7ED8F0572456E5FE00CBC399 /* HyBidStatic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ED8F0552456E5FE00CBC399 /* HyBidStatic.framework */; };
 		7ED8F0582456E5FE00CBC399 /* iqv.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7ED8F0562456E5FE00CBC399 /* iqv.bundle */; };
@@ -35,7 +36,6 @@
 		54E93E05243BCA0100178BBF /* BannerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BannerViewController.h; sourceTree = "<group>"; };
 		54E93E06243BCA0100178BBF /* MRectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRectViewController.h; sourceTree = "<group>"; };
 		54E93E07243BCA0100178BBF /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		54E93E08243BCA0100178BBF /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../pubnative-hybid-ios-sdk/PubnativeLite/AdSDK Demo/Info.plist"; sourceTree = "<group>"; };
 		54E93E09243BCA0200178BBF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		54E93E0A243BCA0200178BBF /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		54E93E0B243BCA0200178BBF /* InterstitialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InterstitialViewController.m; sourceTree = "<group>"; };
@@ -43,6 +43,8 @@
 		54E93E0D243BCA0200178BBF /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		54E93E0E243BCA0200178BBF /* MRectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRectViewController.m; sourceTree = "<group>"; };
 		54E93E0F243BCA0200178BBF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7E6349DE2488FE8000B30DFE /* VideoInterstitialViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoInterstitialViewController.h; sourceTree = "<group>"; };
+		7E6349DF2488FE8000B30DFE /* VideoInterstitialViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoInterstitialViewController.m; sourceTree = "<group>"; };
 		7ED8F0132451875D00CBC399 /* OMSDK_Pubnativenet.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OMSDK_Pubnativenet.framework; sourceTree = "<group>"; };
 		7ED8F0552456E5FE00CBC399 /* HyBidStatic.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = HyBidStatic.framework; sourceTree = "<group>"; };
 		7ED8F0562456E5FE00CBC399 /* iqv.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = iqv.bundle; sourceTree = "<group>"; };
@@ -65,21 +67,14 @@
 			isa = PBXGroup;
 			children = (
 				7ED8F01B24518C2200CBC399 /* HyBid */,
-				54E93E0C243BCA0200178BBF /* AdSdkDemoSettings.h */,
-				54E93E02243BCA0100178BBF /* AdSdkDemoSettings.m */,
 				54E93E0D243BCA0200178BBF /* AppDelegate.h */,
 				54E93E07243BCA0100178BBF /* AppDelegate.m */,
-				54E93E09243BCA0200178BBF /* Assets.xcassets */,
-				54E93E05243BCA0100178BBF /* BannerViewController.h */,
-				54E93E04243BCA0100178BBF /* BannerViewController.m */,
-				54E93E08243BCA0100178BBF /* Info.plist */,
-				54E93E03243BCA0100178BBF /* InterstitialViewController.h */,
-				54E93E0B243BCA0200178BBF /* InterstitialViewController.m */,
+				7E6349DD2488FE3000B30DFE /* Constants */,
+				7E6349DC2488FDF600B30DFE /* Controllers */,
 				54E93E0F243BCA0200178BBF /* LaunchScreen.storyboard */,
-				54E93DFF243BCA0100178BBF /* main.m */,
 				54E93E0A243BCA0200178BBF /* Main.storyboard */,
-				54E93E06243BCA0100178BBF /* MRectViewController.h */,
-				54E93E0E243BCA0200178BBF /* MRectViewController.m */,
+				54E93DFF243BCA0100178BBF /* main.m */,
+				54E93E09243BCA0200178BBF /* Assets.xcassets */,
 				54E93E00243BCA0100178BBF /* SceneDelegate.h */,
 				54E93E01243BCA0100178BBF /* SceneDelegate.m */,
 				54D12EEC242D5451000B053F /* README.md */,
@@ -95,6 +90,30 @@
 				54D12EB2242D4DB6000B053F /* iqv demo.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		7E6349DC2488FDF600B30DFE /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				54E93E05243BCA0100178BBF /* BannerViewController.h */,
+				54E93E04243BCA0100178BBF /* BannerViewController.m */,
+				54E93E03243BCA0100178BBF /* InterstitialViewController.h */,
+				54E93E0B243BCA0200178BBF /* InterstitialViewController.m */,
+				54E93E06243BCA0100178BBF /* MRectViewController.h */,
+				54E93E0E243BCA0200178BBF /* MRectViewController.m */,
+				7E6349DE2488FE8000B30DFE /* VideoInterstitialViewController.h */,
+				7E6349DF2488FE8000B30DFE /* VideoInterstitialViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		7E6349DD2488FE3000B30DFE /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				54E93E0C243BCA0200178BBF /* AdSdkDemoSettings.h */,
+				54E93E02243BCA0100178BBF /* AdSdkDemoSettings.m */,
+			);
+			path = Constants;
 			sourceTree = "<group>";
 		};
 		7ED8F010245186FA00CBC399 /* Frameworks */ = {
@@ -187,6 +206,7 @@
 			files = (
 				54E93E10243BCA0200178BBF /* main.m in Sources */,
 				54E93E19243BCA0200178BBF /* MRectViewController.m in Sources */,
+				7E6349E02488FE8000B30DFE /* VideoInterstitialViewController.m in Sources */,
 				54E93E12243BCA0200178BBF /* AdSdkDemoSettings.m in Sources */,
 				54E93E13243BCA0200178BBF /* BannerViewController.m in Sources */,
 				54E93E11243BCA0200178BBF /* SceneDelegate.m in Sources */,

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -111,6 +111,7 @@
                         <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
                         <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
                         <segue destination="kWO-0A-xte" kind="relationship" relationship="viewControllers" id="SDO-1y-ga9"/>
+                        <segue destination="zyN-ot-4fE" kind="relationship" relationship="viewControllers" id="HH7-0S-ZiV"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
@@ -148,12 +149,45 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1bh-Rf-Ygg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1295.6521739130435" y="758.70535714285711"/>
+            <point key="canvasLocation" x="1328" y="693"/>
+        </scene>
+        <!--Video Interstitial-->
+        <scene sceneID="cBw-qR-oda">
+            <objects>
+                <viewController id="zyN-ot-4fE" customClass="VideoInterstitialViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="08K-MR-rUJ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="azm-5E-QSl">
+                                <rect key="frame" x="20" y="64" width="374" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Load Video Interstitial"/>
+                                <connections>
+                                    <action selector="requestInterstitialTouchUpInside:" destination="zyN-ot-4fE" eventType="touchUpInside" id="H1M-f2-MUQ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="azm-5E-QSl" firstAttribute="leading" secondItem="4PZ-0Z-g2C" secondAttribute="leading" constant="20" id="6W7-ZN-iJj"/>
+                            <constraint firstItem="4PZ-0Z-g2C" firstAttribute="trailing" secondItem="azm-5E-QSl" secondAttribute="trailing" constant="20" id="F6j-pc-dgh"/>
+                            <constraint firstItem="azm-5E-QSl" firstAttribute="top" secondItem="4PZ-0Z-g2C" secondAttribute="top" constant="20" id="Isq-Fb-Jfq"/>
+                            <constraint firstItem="azm-5E-QSl" firstAttribute="centerX" secondItem="08K-MR-rUJ" secondAttribute="centerX" id="Kmv-xn-g24"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="4PZ-0Z-g2C"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Video Interstitial" image="v.square.fill" catalog="system" id="aop-aQ-XzZ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jzt-Is-LpM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1296" y="1426"/>
         </scene>
     </scenes>
     <resources>
-        <image name="b.square.fill" catalog="system" width="64" height="56"/>
-        <image name="i.square.fill" catalog="system" width="64" height="56"/>
-        <image name="m.square.fill" catalog="system" width="64" height="56"/>
+        <image name="b.square.fill" catalog="system" width="128" height="114"/>
+        <image name="i.square.fill" catalog="system" width="128" height="114"/>
+        <image name="m.square.fill" catalog="system" width="128" height="114"/>
+        <image name="v.square.fill" catalog="system" width="128" height="114"/>
     </resources>
 </document>
