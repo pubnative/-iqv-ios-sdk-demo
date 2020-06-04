@@ -45,7 +45,7 @@
 }
 
 - (void)requestAd {
-    self.interstitialAd = [[HyBidInterstitialAd alloc] initWithDelegate:self];
+    self.interstitialAd = [[HyBidInterstitialAd alloc] initWithZoneID:@"4" andWithDelegate:self];
     [self.interstitialAd load];
 }
 

@@ -48,7 +48,7 @@
 
 - (void)requestAd {
     self.bannerAdView.adSize = HyBidAdSize.SIZE_320x50;
-    [self.bannerAdView loadWithDelegate:self];
+    [self.bannerAdView loadWithZoneID:@"2" andWithDelegate:self];
 }
 
 - (void)requestLocation {
