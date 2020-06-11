@@ -1,5 +1,5 @@
 //
-//  Copyright © 2018 PubNative. All rights reserved.
+//  Copyright © 2020 PubNative. All rights reserved.
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
 //  of this software and associated documentation files (the "Software"), to deal
@@ -21,12 +21,12 @@
 //
 
 #import "BannerViewController.h"
+
 #import <HyBidStatic/HyBidStatic.h>
 
-@interface BannerViewController () <HyBidAdViewDelegate>
+@interface BannerViewController () <VWAdvertViewDelegate>
 
-@property (weak, nonatomic) IBOutlet HyBidAdView *bannerAdView;
-@property (weak, nonatomic) IBOutlet UIButton *loadAdButton;
+@property (weak, nonatomic) IBOutlet VWAdvertView *bannerAdView;
 @property (nonatomic,strong)CLLocationManager *locationManager;
 
 @end
@@ -39,7 +39,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self requestLocation];
 }
 
 - (IBAction)requestBannerTouchUpInside:(id)sender {
@@ -47,16 +46,11 @@
 }
 
 - (void)requestAd {
-    self.bannerAdView.adSize = HyBidAdSize.SIZE_320x50;
-    [self.bannerAdView loadWithZoneID:@"2" andWithDelegate:self];
-}
+    self.bannerAdView.delegate = self;
+    self.bannerAdView.adSize = kVWAdSizeBanner;
+    VWAdRequest* adRequest = [VWAdRequest requestWithContentCategoryID:VWContentCategoryNewsAndInformation];
+    [self.bannerAdView loadRequestWithZoneID:@"2" andWithRequest: adRequest];
 
-- (void)requestLocation {
-    self.locationManager = [[CLLocationManager alloc] init];
-    self.locationManager.distanceFilter = kCLDistanceFilterNone;
-    self.locationManager.desiredAccuracy = kCLLocationAccuracyBest;
-    [self.locationManager startUpdatingLocation];
-    [self.locationManager requestWhenInUseAuthorization];
 }
 
 - (void)showAlertControllerWithMessage:(NSString *)message {
@@ -74,24 +68,15 @@
     [self presentViewController:alertController animated:YES completion:nil];
 }
 
-#pragma mark - HyBidAdViewDelegate
+#pragma mark - VWAdvertViewDelegate
 
-- (void)adViewDidLoad:(HyBidAdView *)adView {
+- (void)advertViewDidReceiveAd:(nonnull VWAdvertView *)adView {
     NSLog(@"Banner Ad View did load:");
-    [adView show];
 }
 
-- (void)adView:(HyBidAdView *)adView didFailWithError:(NSError *)error {
+- (void)advertView:(nonnull VWAdvertView *)adView didFailToReceiveAdWithError:(nullable NSError *)error {
     NSLog(@"Banner Ad View did fail with error: %@",error.localizedDescription);
     [self showAlertControllerWithMessage:error.localizedDescription];
-}
-
-- (void)adViewDidTrackClick:(HyBidAdView *)adView {
-    NSLog(@"Banner Ad View did track click:");
-}
-
-- (void)adViewDidTrackImpression:(HyBidAdView *)adView {
-    NSLog(@"Banner Ad View did track impression:");
 }
 
 @end

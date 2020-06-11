@@ -24,7 +24,7 @@
                                     <action selector="requestBannerTouchUpInside:" destination="9pv-A4-QxB" eventType="touchUpInside" id="0fB-RM-931"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gmO-hN-8it" customClass="HyBidAdView">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gmO-hN-8it" customClass="VWAdvertView">
                                 <rect key="frame" x="47" y="106" width="320" height="50"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
@@ -46,7 +46,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Banner" image="b.square.fill" catalog="system" id="acW-dT-cKf"/>
                     <connections>
-                        <outlet property="bannerAdView" destination="gmO-hN-8it" id="PZb-S2-LEE"/>
+                        <outlet property="bannerAdView" destination="gmO-hN-8it" id="e1M-B4-fRo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
