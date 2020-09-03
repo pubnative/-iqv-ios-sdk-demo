@@ -19,8 +19,8 @@
 		54E93E1A243BCA0200178BBF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54E93E0F243BCA0200178BBF /* LaunchScreen.storyboard */; };
 		7E1B1A432500F767004E4BF8 /* OMSDK_Pubnativenet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E1B1A412500F767004E4BF8 /* OMSDK_Pubnativenet.framework */; };
 		7E1B1A442500F767004E4BF8 /* omsdk.js in Resources */ = {isa = PBXBuildFile; fileRef = 7E1B1A422500F767004E4BF8 /* omsdk.js */; };
-		7E1B1A472500F787004E4BF8 /* HyBidStatic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E1B1A452500F787004E4BF8 /* HyBidStatic.framework */; };
 		7E1B1A482500F787004E4BF8 /* iqv.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7E1B1A462500F787004E4BF8 /* iqv.bundle */; };
+		7E1B1A4A2500F896004E4BF8 /* HyBidStatic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E1B1A492500F896004E4BF8 /* HyBidStatic.framework */; };
 		7E6349E02488FE8000B30DFE /* VideoInterstitialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E6349DF2488FE8000B30DFE /* VideoInterstitialViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -46,8 +46,8 @@
 		54E93E0F243BCA0200178BBF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7E1B1A412500F767004E4BF8 /* OMSDK_Pubnativenet.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OMSDK_Pubnativenet.framework; sourceTree = "<group>"; };
 		7E1B1A422500F767004E4BF8 /* omsdk.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = omsdk.js; sourceTree = "<group>"; };
-		7E1B1A452500F787004E4BF8 /* HyBidStatic.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = HyBidStatic.framework; sourceTree = "<group>"; };
 		7E1B1A462500F787004E4BF8 /* iqv.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = iqv.bundle; sourceTree = "<group>"; };
+		7E1B1A492500F896004E4BF8 /* HyBidStatic.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = HyBidStatic.framework; sourceTree = "<group>"; };
 		7E6349DE2488FE8000B30DFE /* VideoInterstitialViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoInterstitialViewController.h; sourceTree = "<group>"; };
 		7E6349DF2488FE8000B30DFE /* VideoInterstitialViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoInterstitialViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -58,7 +58,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7E1B1A432500F767004E4BF8 /* OMSDK_Pubnativenet.framework in Frameworks */,
-				7E1B1A472500F787004E4BF8 /* HyBidStatic.framework in Frameworks */,
+				7E1B1A4A2500F896004E4BF8 /* HyBidStatic.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,7 +69,7 @@
 			isa = PBXGroup;
 			children = (
 				7ED8F01B24518C2200CBC399 /* HyBid */,
-				7E1B1A452500F787004E4BF8 /* HyBidStatic.framework */,
+				7E1B1A492500F896004E4BF8 /* HyBidStatic.framework */,
 				7E1B1A462500F787004E4BF8 /* iqv.bundle */,
 				7E1B1A402500F767004E4BF8 /* OMSDK-1.3.7 */,
 				54E93E0D243BCA0200178BBF /* AppDelegate.h */,
