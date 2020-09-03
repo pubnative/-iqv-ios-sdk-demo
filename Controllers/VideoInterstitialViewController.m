@@ -23,16 +23,17 @@
 #import "VideoInterstitialViewController.h"
 #import <HyBidStatic/HyBidStatic.h>
 
-@interface VideoInterstitialViewController () <VWInterstitialVideoAdDelegate>
+@interface VideoInterstitialViewController () <HyBidInterstitialAdDelegate>
 
-@property (nonatomic, strong) VWInterstitialVideoAd *videoInterstitialAd;
+@property (nonatomic, strong) HyBidInterstitialAd *interstitialAd;
+@property (weak, nonatomic) IBOutlet UIButton *loadAdButton;
 
 @end
 
 @implementation VideoInterstitialViewController
 
 - (void)dealloc {
-    self.videoInterstitialAd = nil;
+    self.interstitialAd = nil;
 }
 
 - (void)viewDidLoad {
@@ -44,14 +45,12 @@
 }
 
 - (void)requestAd {
-    self.videoInterstitialAd = [VWInterstitialVideoAd new];
-    self.videoInterstitialAd.allowAutoPlay = YES;
-    self.videoInterstitialAd.allowAudioOnStart = YES;
-    self.videoInterstitialAd.delegate = self;
-    VWVideoAdRequest * adRequest = [VWVideoAdRequest requestWithContentCategoryIDs:@[@(VWContentCategoryPets), @(VWContentCategoryMusic), @(VWContentCategorySports)]];
-    adRequest.minDuration = @(10);
-    adRequest.maxDuration = @(90);
-    [self.videoInterstitialAd loadRequestWithZoneID:@"6" andWithRequest:adRequest];
+    // The example classes InterstitialViewController and VideoInterstitialViewController are identical in all aspects, except for the provided zone ID.
+    // default zone Ids
+    // 4 static interstitials
+    // 6 video interstitials
+    self.interstitialAd = [[HyBidInterstitialAd alloc] initWithZoneID:@"6" andWithDelegate:self];
+    [self.interstitialAd load];
 }
 
 - (void)showAlertControllerWithMessage:(NSString *)message {
@@ -69,29 +68,28 @@
     [self presentViewController:alertController animated:YES completion:nil];
 }
 
-#pragma mark - VWInterstitialVideoAdDelegate
+#pragma mark - HyBidInterstitialAdDelegate
 
-- (void)interstitialVideoAdReceiveAd:(VWInterstitialVideoAd *)interstitialVideoAd {
-    NSLog(@"Video Interstitial Ad did load:");
-    [interstitialVideoAd presentFromViewController:self];
+- (void)interstitialDidLoad {
+    NSLog(@"Interstitial did load");
+    [self.interstitialAd show];
 }
 
-- (void)interstitialVideoAd:(VWInterstitialVideoAd *)interstitialVideoAd didFailToReceiveAdWithError:(NSError *)error {
-    NSLog(@"Video Interstitial Ad did fail with error: %@",error.localizedDescription);
-       [self showAlertControllerWithMessage:error.localizedDescription];
+- (void)interstitialDidFailWithError:(NSError *)error {
+    NSLog(@"Interstitial did fail with error: %@",error.localizedDescription);
+    [self showAlertControllerWithMessage:error.localizedDescription];
 }
 
-- (void)interstitialVideoAdWillPresentAd:(VWInterstitialVideoAd *)interstitialVideoAd {
-    NSLog(@"Video Interstitial Ad will present:");
+- (void)interstitialDidTrackClick {
+    NSLog(@"Interstitial did track click");
 }
 
-- (void)interstitialVideoAdWillDismissAd:(VWInterstitialVideoAd *)interstitialVideoAd {
-    NSLog(@"Video Interstitial Ad will dismiss:");
+- (void)interstitialDidTrackImpression {
+    NSLog(@"Interstitial did track impression");
 }
 
-- (void)interstitialVideoAdDidDismissAd:(VWInterstitialVideoAd *)interstitialVideoAd {
-    NSLog(@"Video Interstitial Ad did dismiss:");
+- (void)interstitialDidDismiss {
+    NSLog(@"Interstitial did dismiss");
 }
 
 @end
-

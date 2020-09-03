@@ -17,7 +17,14 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    [HyBid initWithAppToken:[AdSdkDemoSettings sharedInstance].appToken withPartnerKeyword: [AdSdkDemoSettings sharedInstance].partnerKeyword completion:^(BOOL success) {
+    
+    // GDPR countries: The publisher's CMP is expected to write a TCF2 compliant iab consent string to standardUserDefaults with key "IABConsent_ConsentString"
+    //[[NSUserDefaults standardUserDefaults] setObject:gdpr_consent forKey:@"IABConsent_ConsentString"];
+    
+    // CCPA countries: The publisher's CMP is expected to write a US privacy string to standardUserDefaults with key "IABUSPrivacy_String"
+    //[[NSUserDefaults standardUserDefaults] setObject:usprivacy forKey:@"IABUSPrivacy_String"];
+    
+    [HyBid initWithAppToken:[AdSdkDemoSettings sharedInstance].appToken completion:^(BOOL success) {
         if (success) {
             [HyBidLogger setLogLevel:HyBidLogLevelDebug];
             NSLog(@"HyBid initialisation completed");
@@ -28,15 +35,13 @@
     targetingModel.gender = @"m";
     [HyBid setTargeting: targetingModel];
     
-    /*
-     If you have to reconfigure the AdSDK at runtime you can call reconfigure with new parameters. These will be used from the next ad requests onwards
-     
-     [HyBid reconfigure:<#(NSString *)#> withPartnerKeyword:<#(NSString *)#> completion:<#^(BOOL)completion#>];
-
-     */
     
-    // Setting CCPA
-    [[VWAdLibrary shared] setIABUSPrivacyString:@"1YYN"];
+     /*
+      If you have to reconfigure the AdSDK at runtime you can call reconfigure with new parameters. These will be used from the next ad requests onwards
+     
+     [HyBid reconfigure:<#(NSString *)#> completion:<#^(BOOL)completion#>];
+      */
+     
     
     return YES;
 }

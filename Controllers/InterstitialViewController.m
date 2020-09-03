@@ -45,6 +45,10 @@
 }
 
 - (void)requestAd {
+    // The example classes InterstitialViewController and VideoInterstitialViewController are identical in all aspects, except for the provided zone ID.
+    // default zone Ids
+    // 4 static interstitials
+    // 6 video interstitials
     self.interstitialAd = [[HyBidInterstitialAd alloc] initWithZoneID:@"4" andWithDelegate:self];
     [self.interstitialAd load];
 }
