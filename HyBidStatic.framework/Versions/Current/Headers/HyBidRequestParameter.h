@@ -54,9 +54,9 @@
 + (NSString *)bundleId;
 + (NSString *)displayManager;
 + (NSString *)displayManagerVersion;
-+ (NSString *)usprivacy;
-+ (NSString *)userconsent;
 + (NSString *)width;
 + (NSString *)height;
++ (NSString *)usprivacy;
++ (NSString *)userconsent;
 
 @end
