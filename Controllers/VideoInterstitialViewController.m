@@ -21,11 +21,11 @@
 //
 
 #import "VideoInterstitialViewController.h"
-#import <HyBidStatic/HyBidStatic.h>
+#import <IQVStatic/IQVStatic.h>
 
-@interface VideoInterstitialViewController () <HyBidInterstitialAdDelegate>
+@interface VideoInterstitialViewController () <IQVInterstitialAdDelegate>
 
-@property (nonatomic, strong) HyBidInterstitialAd *interstitialAd;
+@property (nonatomic, strong) IQVInterstitialAd *interstitialAd;
 @property (weak, nonatomic) IBOutlet UIButton *loadAdButton;
 
 @end
@@ -49,7 +49,7 @@
     // default zone Ids
     // 4 static interstitials
     // 6 video interstitials
-    self.interstitialAd = [[HyBidInterstitialAd alloc] initWithZoneID:@"6" andWithDelegate:self];
+    self.interstitialAd = [[IQVInterstitialAd alloc] initWithZoneID:@"6" andWithDelegate:self];
     [self.interstitialAd load];
 }
 
@@ -68,7 +68,7 @@
     [self presentViewController:alertController animated:YES completion:nil];
 }
 
-#pragma mark - HyBidInterstitialAdDelegate
+#pragma mark - IQVInterstitialAdDelegate
 
 - (void)interstitialDidLoad {
     NSLog(@"Interstitial did load");

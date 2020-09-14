@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <HyBidStatic/HyBidStatic.h>
+#import <IQVStatic/IQVStatic.h>
 
 @interface AdSdkDemoSettings : NSObject
 

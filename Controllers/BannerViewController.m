@@ -21,11 +21,11 @@
 //
 
 #import "BannerViewController.h"
-#import <HyBidStatic/HyBidStatic.h>
+#import <IQVStatic/IQVStatic.h>
 
-@interface BannerViewController () <HyBidAdViewDelegate>
+@interface BannerViewController () <IQVAdViewDelegate>
 
-@property (weak, nonatomic) IBOutlet HyBidAdView *bannerAdView;
+@property (weak, nonatomic) IBOutlet IQVAdView *bannerAdView;
 @property (nonatomic,strong)CLLocationManager *locationManager;
 
 @end
@@ -46,7 +46,7 @@
 }
 
 - (void)requestAd {
-    self.bannerAdView.adSize = HyBidAdSize.SIZE_320x50;
+    self.bannerAdView.adSize = IQVAdSize.SIZE_320x50;
     [self.bannerAdView loadWithZoneID:@"2" andWithDelegate:self];
 }
 
@@ -73,23 +73,23 @@
     [self presentViewController:alertController animated:YES completion:nil];
 }
 
-#pragma mark - HyBidAdViewDelegate
+#pragma mark - IQVAdViewDelegate
 
-- (void)adViewDidLoad:(HyBidAdView *)adView {
+- (void)adViewDidLoad:(IQVAdView *)adView {
     NSLog(@"Banner Ad View did load:");
     [adView show];
 }
 
-- (void)adView:(HyBidAdView *)adView didFailWithError:(NSError *)error {
+- (void)adView:(IQVAdView *)adView didFailWithError:(NSError *)error {
     NSLog(@"Banner Ad View did fail with error: %@",error.localizedDescription);
     [self showAlertControllerWithMessage:error.localizedDescription];
 }
 
-- (void)adViewDidTrackClick:(HyBidAdView *)adView {
+- (void)adViewDidTrackClick:(IQVAdView *)adView {
     NSLog(@"Banner Ad View did track click:");
 }
 
-- (void)adViewDidTrackImpression:(HyBidAdView *)adView {
+- (void)adViewDidTrackImpression:(IQVAdView *)adView {
     NSLog(@"Banner Ad View did track impression:");
 }
 
