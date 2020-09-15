@@ -20,10 +20,10 @@
 //  THE SOFTWARE.
 //
 
-@class OMIDPubnativenetPartner;
-@class OMIDPubnativenetAdEvents;
-@class OMIDPubnativenetAdSession;
-@class OMIDPubnativenetMediaEvents;
+@class OMIDIqzonePartner;
+@class OMIDIqzoneAdEvents;
+@class OMIDIqzoneAdSession;
+@class OMIDIqzoneMediaEvents;
 
 #import <Foundation/Foundation.h>
 
@@ -33,16 +33,16 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, assign) BOOL viewabilityMeasurementEnabled;
 @property (nonatomic, assign) BOOL isViewabilityMeasurementActivated;
-@property (nonatomic, strong) OMIDPubnativenetPartner *partner;
-@property (nonatomic, strong) OMIDPubnativenetAdSession *omidAdSession;
-@property (nonatomic, strong) OMIDPubnativenetAdSession *omidMediaAdSession;
-@property (nonatomic, strong) OMIDPubnativenetAdEvents *adEvents;
-@property (nonatomic, strong) OMIDPubnativenetMediaEvents *omidMediaEvents;
+@property (nonatomic, strong) OMIDIqzonePartner *partner;
+@property (nonatomic, strong) OMIDIqzoneAdSession *omidAdSession;
+@property (nonatomic, strong) OMIDIqzoneAdSession *omidMediaAdSession;
+@property (nonatomic, strong) OMIDIqzoneAdEvents *adEvents;
+@property (nonatomic, strong) OMIDIqzoneMediaEvents *omidMediaEvents;
 
 + (instancetype)sharedInstance;
 - (NSString *)getOMIDJS;
-- (OMIDPubnativenetAdEvents *)getAdEvents:(OMIDPubnativenetAdSession*)omidAdSession;
-- (OMIDPubnativenetMediaEvents *)getMediaEvents:(OMIDPubnativenetAdSession*)omidAdSession;
+- (OMIDIqzoneAdEvents *)getAdEvents:(OMIDIqzoneAdSession*)omidAdSession;
+- (OMIDIqzoneMediaEvents *)getMediaEvents:(OMIDIqzoneAdSession*)omidAdSession;
 
 @end
 
