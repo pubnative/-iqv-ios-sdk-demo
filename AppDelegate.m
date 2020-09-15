@@ -18,11 +18,17 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-    // GDPR countries: The publisher's CMP is expected to write a TCF2 compliant iab consent string to standardUserDefaults with key "IABConsent_ConsentString"
-    [[NSUserDefaults standardUserDefaults] setObject:@"TCF2 CONSENT STRING 123456" forKey:@"IABConsent_ConsentString"];
+    /*
+     GDPR countries: The publisher's CMP is expected to write a TCF2 compliant iab consent string to standardUserDefaults with key "IABConsent_ConsentString"
     
-    // CCPA countries: The publisher's CMP is expected to write a US privacy string to standardUserDefaults with key "IABUSPrivacy_String"
-    [[NSUserDefaults standardUserDefaults] setObject:@"1NNXY" forKey:@"IABUSPrivacy_String"];
+    [[NSUserDefaults standardUserDefaults] setObject:gdpr_consent forKey:@"IABConsent_ConsentString"];
+    */
+    
+    /*
+     CCPA countries: The publisher's CMP is expected to write a US privacy string to standardUserDefaults with key "IABUSPrivacy_String"
+    
+    [[NSUserDefaults standardUserDefaults] setObject:usprivacy forKey:@"IABUSPrivacy_String"];
+    */
     
     [IQV initWithAppToken:[AdSdkDemoSettings sharedInstance].appToken completion:^(BOOL success) {
         if (success) {
@@ -35,11 +41,6 @@
     targetingModel.age = [NSNumber numberWithInt:29];
     targetingModel.gender = @"m";
     [IQV setTargeting: targetingModel];
-    [[NSUserDefaults standardUserDefaults] setObject:@"TCF2 CONSENT STRING 1234567" forKey:@"IABConsent_ConsentString"];
-       
-       // CCPA countries: The publisher's CMP is expected to write a US privacy string to standardUserDefaults with key "IABUSPrivacy_String"
-       [[NSUserDefaults standardUserDefaults] setObject:@"1NNXYZ" forKey:@"IABUSPrivacy_String"];
-      
     
      /*
       If you have to reconfigure the AdSDK at runtime you can call reconfigure with new parameters. These will be used from the next ad requests onwards

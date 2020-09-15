@@ -43,7 +43,7 @@
 @property (class, nonatomic, readonly) IQVAdSize *SIZE_INTERSTITIAL;
 @property (class, nonatomic, readonly) IQVAdSize *SIZE_NATIVE;
 
-- (BOOL)isEqualTo:(IQVAdSize *)hyBidAdSize;
+- (BOOL)isEqualTo:(IQVAdSize *)iqvwAdSize;
 
 @end
 

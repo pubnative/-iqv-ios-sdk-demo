@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		543853C6251025B10029500E /* iqv.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 543853C4251025B10029500E /* iqv.bundle */; };
-		543853EB251027370029500E /* .gitattributes in Resources */ = {isa = PBXBuildFile; fileRef = 543853E9251027370029500E /* .gitattributes */; };
 		543853EC251027370029500E /* OMSDK-iOS-v1-Iqzone.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 543853EA251027370029500E /* OMSDK-iOS-v1-Iqzone.a */; };
 		5438542725102B8F0029500E /* IQVStatic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5438542625102B8F0029500E /* IQVStatic.framework */; };
 		54E93E10243BCA0200178BBF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E93DFF243BCA0100178BBF /* main.m */; };
@@ -30,7 +29,6 @@
 		543853DC251027370029500E /* OMIDAdSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OMIDAdSession.h; sourceTree = "<group>"; };
 		543853DD251027370029500E /* OMIDSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OMIDSDK.h; sourceTree = "<group>"; };
 		543853DE251027370029500E /* OMIDVASTProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OMIDVASTProperties.h; sourceTree = "<group>"; };
-		543853DF251027370029500E /* OMIDVideoEvents.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OMIDVideoEvents.h; sourceTree = "<group>"; };
 		543853E0251027370029500E /* OMIDAdSessionConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OMIDAdSessionConfiguration.h; sourceTree = "<group>"; };
 		543853E1251027370029500E /* OMIDImports.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OMIDImports.h; sourceTree = "<group>"; };
 		543853E2251027370029500E /* OMIDMediaEvents.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OMIDMediaEvents.h; sourceTree = "<group>"; };
@@ -96,7 +94,6 @@
 				543853DC251027370029500E /* OMIDAdSession.h */,
 				543853DD251027370029500E /* OMIDSDK.h */,
 				543853DE251027370029500E /* OMIDVASTProperties.h */,
-				543853DF251027370029500E /* OMIDVideoEvents.h */,
 				543853E0251027370029500E /* OMIDAdSessionConfiguration.h */,
 				543853E1251027370029500E /* OMIDImports.h */,
 				543853E2251027370029500E /* OMIDMediaEvents.h */,
@@ -239,7 +236,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				543853C6251025B10029500E /* iqv.bundle in Resources */,
-				543853EB251027370029500E /* .gitattributes in Resources */,
 				54E93E17243BCA0200178BBF /* Main.storyboard in Resources */,
 				7E1B1A442500F767004E4BF8 /* omsdk.js in Resources */,
 				54E93E1A243BCA0200178BBF /* LaunchScreen.storyboard in Resources */,
