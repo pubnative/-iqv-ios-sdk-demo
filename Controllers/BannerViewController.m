@@ -47,6 +47,7 @@
 
 - (void)requestAd {
     self.bannerAdView.adSize = IQVAdSize.SIZE_320x50;
+    self.bannerAdView.autoShowOnLoad = false;
     [self.bannerAdView loadWithZoneID:@"2" andWithDelegate:self];
 }
 
