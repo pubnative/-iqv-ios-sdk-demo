@@ -23,6 +23,7 @@
 #import <UIKit/UIKit.h>
 #import <AdSupport/AdSupport.h>
 #import <CoreLocation/CoreLocation.h>
+#import <AppTrackingTransparency/AppTrackingTransparency.h>
 #import "IQVTargetingModel.h"
 
 @interface IQVSettings : NSObject
