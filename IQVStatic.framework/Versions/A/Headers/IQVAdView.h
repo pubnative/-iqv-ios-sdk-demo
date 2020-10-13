@@ -24,6 +24,7 @@
 #import "IQVAd.h"
 #import "IQVAdRequest.h"
 #import "IQVAdPresenter.h"
+#import "IQVSignalDataProcessor.h"
 
 @class IQVAdView;
 
@@ -36,7 +37,7 @@
 
 @end
 
-@interface IQVAdView : UIView <IQVAdRequestDelegate, IQVAdPresenterDelegate>
+@interface IQVAdView : UIView <IQVAdRequestDelegate, IQVAdPresenterDelegate, IQVSignalDataProcessorDelegate>
 
 @property (nonatomic, strong) IQVAdRequest *adRequest;
 @property (nonatomic, strong) IQVAd *ad;
@@ -52,6 +53,7 @@
 - (void)loadWithZoneID:(NSString *)zoneID andWithDelegate:(NSObject<IQVAdViewDelegate> *)delegate;
 - (void)setupAdView:(UIView *)adView;
 - (void)renderAd;
+- (void)renderAdWithContent:(NSString *)adContent withDelegate:(NSObject<IQVAdViewDelegate> *)delegate;
 - (void)startTracking;
 - (void)stopTracking;
 - (void)show;

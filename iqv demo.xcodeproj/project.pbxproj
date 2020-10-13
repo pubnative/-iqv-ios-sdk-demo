@@ -7,9 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		543853C6251025B10029500E /* iqv.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 543853C4251025B10029500E /* iqv.bundle */; };
 		543853EC251027370029500E /* OMSDK-iOS-v1-Iqzone.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 543853EA251027370029500E /* OMSDK-iOS-v1-Iqzone.a */; };
-		5438542725102B8F0029500E /* IQVStatic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5438542625102B8F0029500E /* IQVStatic.framework */; };
 		54E93E10243BCA0200178BBF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E93DFF243BCA0100178BBF /* main.m */; };
 		54E93E11243BCA0200178BBF /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E93E01243BCA0100178BBF /* SceneDelegate.m */; };
 		54E93E12243BCA0200178BBF /* AdSdkDemoSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E93E02243BCA0100178BBF /* AdSdkDemoSettings.m */; };
@@ -20,12 +18,13 @@
 		54E93E18243BCA0200178BBF /* InterstitialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E93E0B243BCA0200178BBF /* InterstitialViewController.m */; };
 		54E93E19243BCA0200178BBF /* MRectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E93E0E243BCA0200178BBF /* MRectViewController.m */; };
 		54E93E1A243BCA0200178BBF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54E93E0F243BCA0200178BBF /* LaunchScreen.storyboard */; };
+		6F9CC70C2534B63D008FCBD2 /* IQVStatic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F9CC70B2534B63D008FCBD2 /* IQVStatic.framework */; };
+		6F9CC70F2534B642008FCBD2 /* iqv.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6F9CC70E2534B642008FCBD2 /* iqv.bundle */; };
 		7E1B1A442500F767004E4BF8 /* omsdk.js in Resources */ = {isa = PBXBuildFile; fileRef = 7E1B1A422500F767004E4BF8 /* omsdk.js */; };
 		7E6349E02488FE8000B30DFE /* VideoInterstitialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E6349DF2488FE8000B30DFE /* VideoInterstitialViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		543853C4251025B10029500E /* iqv.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = iqv.bundle; sourceTree = "<group>"; };
 		543853DC251027370029500E /* OMIDAdSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OMIDAdSession.h; sourceTree = "<group>"; };
 		543853DD251027370029500E /* OMIDSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OMIDSDK.h; sourceTree = "<group>"; };
 		543853DE251027370029500E /* OMIDVASTProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OMIDVASTProperties.h; sourceTree = "<group>"; };
@@ -40,7 +39,6 @@
 		543853E8251027370029500E /* OMIDPartner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OMIDPartner.h; sourceTree = "<group>"; };
 		543853E9251027370029500E /* .gitattributes */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitattributes; sourceTree = "<group>"; };
 		543853EA251027370029500E /* OMSDK-iOS-v1-Iqzone.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "OMSDK-iOS-v1-Iqzone.a"; sourceTree = "<group>"; };
-		5438542625102B8F0029500E /* IQVStatic.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IQVStatic.framework; sourceTree = "<group>"; };
 		54B64553242EA7FA0036EF46 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		54D12EB2242D4DB6000B053F /* iqv demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iqv demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		54D12EEC242D5451000B053F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -60,6 +58,8 @@
 		54E93E0D243BCA0200178BBF /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		54E93E0E243BCA0200178BBF /* MRectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRectViewController.m; sourceTree = "<group>"; };
 		54E93E0F243BCA0200178BBF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6F9CC70B2534B63D008FCBD2 /* IQVStatic.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IQVStatic.framework; sourceTree = "<group>"; };
+		6F9CC70E2534B642008FCBD2 /* iqv.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = iqv.bundle; sourceTree = "<group>"; };
 		7E1B1A422500F767004E4BF8 /* omsdk.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = omsdk.js; sourceTree = "<group>"; };
 		7E6349DE2488FE8000B30DFE /* VideoInterstitialViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoInterstitialViewController.h; sourceTree = "<group>"; };
 		7E6349DF2488FE8000B30DFE /* VideoInterstitialViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoInterstitialViewController.m; sourceTree = "<group>"; };
@@ -71,7 +71,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				543853EC251027370029500E /* OMSDK-iOS-v1-Iqzone.a in Frameworks */,
-				5438542725102B8F0029500E /* IQVStatic.framework in Frameworks */,
+				6F9CC70C2534B63D008FCBD2 /* IQVStatic.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,8 +110,8 @@
 		54D12EA9242D4DB6000B053F = {
 			isa = PBXGroup;
 			children = (
-				5438542625102B8F0029500E /* IQVStatic.framework */,
-				543853C4251025B10029500E /* iqv.bundle */,
+				6F9CC70B2534B63D008FCBD2 /* IQVStatic.framework */,
+				6F9CC70E2534B642008FCBD2 /* iqv.bundle */,
 				7E1B1A402500F767004E4BF8 /* OMSDK-1.3.7 */,
 				54E93E0D243BCA0200178BBF /* AppDelegate.h */,
 				54E93E07243BCA0100178BBF /* AppDelegate.m */,
@@ -235,7 +235,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				543853C6251025B10029500E /* iqv.bundle in Resources */,
+				6F9CC70F2534B642008FCBD2 /* iqv.bundle in Resources */,
 				54E93E17243BCA0200178BBF /* Main.storyboard in Resources */,
 				7E1B1A442500F767004E4BF8 /* omsdk.js in Resources */,
 				54E93E1A243BCA0200178BBF /* LaunchScreen.storyboard in Resources */,

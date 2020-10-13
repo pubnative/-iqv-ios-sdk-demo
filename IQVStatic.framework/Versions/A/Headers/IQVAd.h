@@ -24,6 +24,10 @@
 #import <UIKit/UIKit.h>
 #import "IQVAdModel.h"
 #import "IQVContentInfoView.h"
+#import "IQVSkAdNetworkModel.h"
+
+#define kIQVAdTypeHTML 0
+#define kIQVAdTypeVideo 1
 
 @interface IQVAd : NSObject
 
@@ -42,8 +46,10 @@
 @property (nonatomic, readonly) IQVContentInfoView *contentInfo;
 
 - (instancetype)initWithData:(IQVAdModel *)data withZoneID:(NSString *)zoneID;
+- (instancetype)initWithAssetGroup:(NSInteger)assetGroup withAdContent:(NSString *)adContent withAdType:(NSInteger)adType;
 - (IQVDataModel *)assetDataWithType:(NSString *)type;
 - (IQVDataModel *)metaDataWithType:(NSString *)type;
 - (NSArray *)beaconsDataWithType:(NSString *)type;
+- (IQVSkAdNetworkModel *)getSkAdNetworkModel;
 
 @end
