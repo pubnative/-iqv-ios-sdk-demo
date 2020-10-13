@@ -1,5 +1,5 @@
 //
-//  Copyright © 2018 PubNative. All rights reserved.
+//  Copyright © 2020 PubNative. All rights reserved.
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
 //  of this software and associated documentation files (the "Software"), to deal
@@ -21,13 +21,20 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "IQVInterstitialPresenter.h"
-#import "IQVAd.h"
 
-@interface IQVInterstitialPresenterFactory : NSObject
+@class IQVSignalDataProcessor, IQVAd;
 
-- (IQVInterstitialPresenter *)createInterstitalPresenterWithAd:(IQVAd *)ad
-                                                  withSkipOffset:(NSUInteger)skipOffset
-                                                    withDelegate:(NSObject<IQVInterstitialPresenterDelegate> *)delegate;
+@protocol IQVSignalDataProcessorDelegate<NSObject>
+
+- (void)signalDataDidFinishWithAd:(IQVAd *)ad;
+- (void)signalDataDidFailWithError:(NSError *)error;
+
+@end
+
+@interface IQVSignalDataProcessor : NSObject
+
+@property (nonatomic, weak) NSObject <IQVSignalDataProcessorDelegate> *delegate;
+
+- (void)processSignalData:(NSString *)signalDataString withZoneID:(NSString *)zoneID;
 
 @end

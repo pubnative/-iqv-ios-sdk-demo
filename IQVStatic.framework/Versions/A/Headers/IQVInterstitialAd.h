@@ -22,6 +22,7 @@
 
 #import <Foundation/Foundation.h>
 #import "IQVAd.h"
+#import "IQVSignalDataProcessor.h"
 
 @protocol IQVInterstitialAdDelegate<NSObject>
 
@@ -33,14 +34,16 @@
 
 @end
 
-@interface IQVInterstitialAd : NSObject
+@interface IQVInterstitialAd : NSObject <IQVSignalDataProcessorDelegate>
 
 @property (nonatomic, strong) IQVAd *ad;
 @property (nonatomic, assign) BOOL isReady;
 @property (nonatomic, assign) BOOL isMediation;
 
 - (instancetype)initWithZoneID:(NSString *)zoneID andWithDelegate:(NSObject<IQVInterstitialAdDelegate> *)delegate;
+- (instancetype)initWithDelegate:(NSObject<IQVInterstitialAdDelegate> *)delegate;
 - (void)load;
+- (void)prepareAdWithContent:(NSString *)adContent;
 
 /// Presents the interstitial ad modally from the current view controller.
 ///
@@ -57,5 +60,7 @@
 */
 - (void)showFromViewController:(UIViewController *)viewController;
 - (void)hide;
+
+- (void)setSkipOffset:(NSInteger)seconds;
 
 @end

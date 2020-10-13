@@ -70,6 +70,7 @@ FOUNDATION_EXPORT const unsigned char IQVVersionString[];
 #import <IQVStatic/IQVLogger.h>
 #import <IQVStatic/IQVIntegrationType.h>
 #import <IQVStatic/IQVAdSize.h>
+#import <IQVStatic/IQVSignalDataProcessor.h>
 
 typedef void (^IQVCompletionBlock)(BOOL);
 

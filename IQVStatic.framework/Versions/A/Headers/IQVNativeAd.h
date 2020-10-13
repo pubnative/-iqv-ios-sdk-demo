@@ -25,6 +25,7 @@
 #import "IQVAd.h"
 #import "IQVNativeAdRenderer.h"
 #import "IQVContentInfoView.h"
+#import "IQVSkAdNetworkModel.h"
 
 @class IQVNativeAd;
 

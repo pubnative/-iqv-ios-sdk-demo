@@ -1,5 +1,5 @@
 //
-//  Copyright © 2018 PubNative. All rights reserved.
+//  Copyright © 2020 PubNative. All rights reserved.
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
 //  of this software and associated documentation files (the "Software"), to deal
@@ -21,13 +21,17 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "IQVInterstitialPresenter.h"
-#import "IQVAd.h"
+#import "IQVBaseModel.h"
 
-@interface IQVInterstitialPresenterFactory : NSObject
+NS_ASSUME_NONNULL_BEGIN
 
-- (IQVInterstitialPresenter *)createInterstitalPresenterWithAd:(IQVAd *)ad
-                                                  withSkipOffset:(NSUInteger)skipOffset
-                                                    withDelegate:(NSObject<IQVInterstitialPresenterDelegate> *)delegate;
+@interface IQVSkAdNetworkModel : IQVBaseModel
+
+@property (nonatomic, strong) NSDictionary *productParameters;
+
+- (instancetype)initWithParameters:(NSDictionary *)productParams;
+- (NSDictionary *) getStoreKitParameters;
 
 @end
+
+NS_ASSUME_NONNULL_END
