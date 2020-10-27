@@ -38,6 +38,7 @@
 @interface IQVAdRequest : NSObject
 
 @property (nonatomic, strong) IQVAdSize *adSize;
+@property (nonatomic, assign) BOOL isRewarded;
 @property (nonatomic, readonly) NSArray<NSString *> *supportedAPIFrameworks;
 
 - (void)setIntegrationType:(IntegrationType)integrationType withZoneID:(NSString *)zoneID;
