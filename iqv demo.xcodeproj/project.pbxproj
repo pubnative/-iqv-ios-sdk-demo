@@ -18,8 +18,8 @@
 		54E93E18243BCA0200178BBF /* InterstitialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E93E0B243BCA0200178BBF /* InterstitialViewController.m */; };
 		54E93E19243BCA0200178BBF /* MRectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E93E0E243BCA0200178BBF /* MRectViewController.m */; };
 		54E93E1A243BCA0200178BBF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54E93E0F243BCA0200178BBF /* LaunchScreen.storyboard */; };
-		6F6EECBE254822680008F342 /* iqv.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6F6EECBC254822660008F342 /* iqv.bundle */; };
-		6F6EECBF254822680008F342 /* IQVStatic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F6EECBD254822680008F342 /* IQVStatic.framework */; };
+		6F95EBCA2565205D0023FDD7 /* iqv.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6F95EBC82565205C0023FDD7 /* iqv.bundle */; };
+		6F95EBCB2565205D0023FDD7 /* IQVStatic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F95EBC92565205D0023FDD7 /* IQVStatic.framework */; };
 		7E1B1A442500F767004E4BF8 /* omsdk.js in Resources */ = {isa = PBXBuildFile; fileRef = 7E1B1A422500F767004E4BF8 /* omsdk.js */; };
 		7E6349E02488FE8000B30DFE /* VideoInterstitialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E6349DF2488FE8000B30DFE /* VideoInterstitialViewController.m */; };
 /* End PBXBuildFile section */
@@ -58,8 +58,8 @@
 		54E93E0D243BCA0200178BBF /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		54E93E0E243BCA0200178BBF /* MRectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRectViewController.m; sourceTree = "<group>"; };
 		54E93E0F243BCA0200178BBF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
-		6F6EECBC254822660008F342 /* iqv.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = iqv.bundle; sourceTree = "<group>"; };
-		6F6EECBD254822680008F342 /* IQVStatic.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IQVStatic.framework; sourceTree = "<group>"; };
+		6F95EBC82565205C0023FDD7 /* iqv.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = iqv.bundle; sourceTree = "<group>"; };
+		6F95EBC92565205D0023FDD7 /* IQVStatic.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IQVStatic.framework; sourceTree = "<group>"; };
 		7E1B1A422500F767004E4BF8 /* omsdk.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = omsdk.js; sourceTree = "<group>"; };
 		7E6349DE2488FE8000B30DFE /* VideoInterstitialViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoInterstitialViewController.h; sourceTree = "<group>"; };
 		7E6349DF2488FE8000B30DFE /* VideoInterstitialViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoInterstitialViewController.m; sourceTree = "<group>"; };
@@ -71,7 +71,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				543853EC251027370029500E /* OMSDK-iOS-v1-Iqzone.a in Frameworks */,
-				6F6EECBF254822680008F342 /* IQVStatic.framework in Frameworks */,
+				6F95EBCB2565205D0023FDD7 /* IQVStatic.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,8 +110,8 @@
 		54D12EA9242D4DB6000B053F = {
 			isa = PBXGroup;
 			children = (
-				6F6EECBC254822660008F342 /* iqv.bundle */,
-				6F6EECBD254822680008F342 /* IQVStatic.framework */,
+				6F95EBC82565205C0023FDD7 /* iqv.bundle */,
+				6F95EBC92565205D0023FDD7 /* IQVStatic.framework */,
 				7E1B1A402500F767004E4BF8 /* OMSDK-1.3.7 */,
 				54E93E0D243BCA0200178BBF /* AppDelegate.h */,
 				54E93E07243BCA0100178BBF /* AppDelegate.m */,
@@ -235,7 +235,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6F6EECBE254822680008F342 /* iqv.bundle in Resources */,
+				6F95EBCA2565205D0023FDD7 /* iqv.bundle in Resources */,
 				54E93E17243BCA0200178BBF /* Main.storyboard in Resources */,
 				7E1B1A442500F767004E4BF8 /* omsdk.js in Resources */,
 				54E93E1A243BCA0200178BBF /* LaunchScreen.storyboard in Resources */,
