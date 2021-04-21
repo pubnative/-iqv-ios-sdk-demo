@@ -59,7 +59,8 @@
            delegate:(id<IQVMRAIDViewDelegate>)delegate
     serviceDelegate:(id<IQVMRAIDServiceDelegate>)serviceDelegate
  rootViewController:(UIViewController *)rootViewController
-        contentInfo:(IQVContentInfoView *)contentInfo;
+        contentInfo:(IQVContentInfoView *)contentInfo
+         skipOffset:(NSInteger)skipOffset;
 
 - (void)cancel;
 

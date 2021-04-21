@@ -71,6 +71,10 @@ FOUNDATION_EXPORT const unsigned char IQVVersionString[];
 #import <IQVStatic/IQVIntegrationType.h>
 #import <IQVStatic/IQVAdSize.h>
 #import <IQVStatic/IQVSignalDataProcessor.h>
+#import <IQVStatic/IQVRewardedAd.h>
+#import <IQVStatic/IQVReportingManager.h>
+#import <IQVStatic/IQVReporting.h>
+#import <IQVStatic/IQVReportingEvent.h>
 
 typedef void (^IQVCompletionBlock)(BOOL);
 
@@ -81,5 +85,7 @@ typedef void (^IQVCompletionBlock)(BOOL);
 + (void)setTestMode:(BOOL)enabled;
 + (void)initWithAppToken:(NSString *)appToken completion:(IQVCompletionBlock)completion;
 + (void)setLocationUpdates:(BOOL)enabled;
++ (void)setLocationTracking:(BOOL)enabled;
++ (IQVReportingManager *)reportingManager;
 
 @end

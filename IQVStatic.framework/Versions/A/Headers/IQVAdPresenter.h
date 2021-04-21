@@ -34,6 +34,9 @@
 - (void)adPresenter:(IQVAdPresenter *)adPresenter
        didFailWithError:(NSError *)error;
 
+@optional
+- (void)adPresenterDidStartPlaying:(IQVAdPresenter *)adPresenter;
+
 @end
 
 @interface IQVAdPresenter : NSObject

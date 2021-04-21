@@ -41,5 +41,6 @@
 - (NSString *)getOMIDJS;
 - (OMIDIqzoneAdEvents *)getAdEvents:(OMIDIqzoneAdSession*)omidAdSession;
 - (OMIDIqzoneMediaEvents *)getMediaEvents:(OMIDIqzoneAdSession*)omidAdSession;
+- (void) reportEvent: (NSString*)eventType;
 
 @end

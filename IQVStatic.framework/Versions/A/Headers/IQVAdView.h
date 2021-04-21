@@ -28,6 +28,12 @@
 
 @class IQVAdView;
 
+typedef enum {
+    UNKNOWN,
+    TOP,
+    BOTTOM
+} BannerPosition;
+
 @protocol IQVAdViewDelegate<NSObject>
 
 - (void)adViewDidLoad:(IQVAdView *)adView;
@@ -45,12 +51,13 @@
 @property (nonatomic, assign) BOOL isMediation;
 @property (nonatomic, strong) IQVAdSize *adSize;
 @property (nonatomic, assign) BOOL autoShowOnLoad;
+@property (nonatomic) BannerPosition bannerPosition;
 
 - (instancetype)initWithSize:(IQVAdSize *)adSize NS_DESIGNATED_INITIALIZER;
 - (instancetype)initWithCoder:(NSCoder *)coder NS_UNAVAILABLE;
 - (instancetype)initWithFrame:(CGRect)frame NS_UNAVAILABLE;
-//- (instancetype)init NS_UNAVAILABLE;
 - (void)loadWithZoneID:(NSString *)zoneID andWithDelegate:(NSObject<IQVAdViewDelegate> *)delegate;
+- (void)loadWithZoneID:(NSString *)zoneID withPosition:(BannerPosition)bannerPosition andWithDelegate:(NSObject<IQVAdViewDelegate> *)delegate;
 - (void)setupAdView:(UIView *)adView;
 - (void)renderAd;
 - (void)renderAdWithContent:(NSString *)adContent withDelegate:(NSObject<IQVAdViewDelegate> *)delegate;
