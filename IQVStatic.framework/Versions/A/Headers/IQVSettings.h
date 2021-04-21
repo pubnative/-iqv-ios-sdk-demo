@@ -34,7 +34,9 @@
 @property (nonatomic, strong) IQVTargetingModel *targeting;
 @property (nonatomic, strong) NSString *appToken;
 @property (nonatomic, strong) NSString *apiURL;
+@property (nonatomic, strong) NSString *openRtbApiURL;
 @property (nonatomic, strong) NSString *appID;
+@property (nonatomic, assign) NSInteger skipOffset;
 
 // COMMON PARAMETERS
 @property (readonly) NSString *advertisingId;
@@ -49,8 +51,10 @@
 @property (readonly) NSString *sdkVersion;
 @property (readonly) NSString *appBundleID;
 @property (readonly) NSString *appVersion;
+@property (readonly) BOOL locationTrackingEnabled;
 @property (readonly) CLLocation *location;
 @property (readonly) NSString *identifierForVendor;
+@property (readonly) NSString *ip;
 
 + (IQVSettings *)sharedInstance;
 

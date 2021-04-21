@@ -27,6 +27,12 @@
 
 @class IQVAdRequest;
 
+typedef enum {
+     NATIVE,
+     BANNER,
+     VIDEO
+ } AdType;
+
 @protocol IQVAdRequestDelegate <NSObject>
 
 - (void)requestDidStart:(IQVAdRequest *)request;
@@ -40,8 +46,10 @@
 @property (nonatomic, strong) IQVAdSize *adSize;
 @property (nonatomic, assign) BOOL isRewarded;
 @property (nonatomic, readonly) NSArray<NSString *> *supportedAPIFrameworks;
+@property (nonatomic) AdType openRTBAdType;
 
 - (void)setIntegrationType:(IntegrationType)integrationType withZoneID:(NSString *)zoneID;
 - (void)requestAdWithDelegate:(NSObject<IQVAdRequestDelegate> *)delegate withZoneID:(NSString *)zoneID;
+- (void)requestVideoTagFrom:(NSString *)url andWithDelegate:(NSObject<IQVAdRequestDelegate> *)delegate;
 
 @end

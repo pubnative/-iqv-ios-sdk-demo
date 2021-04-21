@@ -22,7 +22,6 @@
 
 static NSString* IQVYMRAIDSupportsSMS = @"sms";
 static NSString* IQVYMRAIDSupportsTel = @"tel";
-static NSString* IQVYMRAIDSupportsCalendar = @"calendar";
 static NSString* IQVYMRAIDSupportsStorePicture = @"storePicture";
 static NSString* IQVYMRAIDSupportsInlineVideo = @"inlineVideo";
 
@@ -36,7 +35,6 @@ static NSString* IQVYMRAIDSupportsInlineVideo = @"inlineVideo";
 @optional
 
 // These callbacks are to request other services.
-- (void)mraidServiceCreateCalendarEventWithEventJSON:(NSString *)eventJSON;
 - (void)mraidServicePlayVideoWithUrlString:(NSString *)urlString;
 - (void)mraidServiceOpenBrowserWithUrlString:(NSString *)urlString;
 - (void)mraidServiceStorePictureWithUrlString:(NSString *)urlString;

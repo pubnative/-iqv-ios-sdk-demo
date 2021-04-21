@@ -25,6 +25,7 @@
 #import "IQVAdModel.h"
 #import "IQVContentInfoView.h"
 #import "IQVSkAdNetworkModel.h"
+#import "IQVOpenRTBDataModel.h"
 
 #define kIQVAdTypeHTML 0
 #define kIQVAdTypeVideo 1
@@ -44,12 +45,17 @@
 @property (nonatomic, readonly) NSNumber *height;
 @property (nonatomic, readonly) NSArray<IQVDataModel*> *beacons;
 @property (nonatomic, readonly) IQVContentInfoView *contentInfo;
+@property (nonatomic) NSInteger adType;
+@property (nonatomic, assign) BOOL isUsingOpenRTB;
 
 - (instancetype)initWithData:(IQVAdModel *)data withZoneID:(NSString *)zoneID;
+- (instancetype)initOpenRTBWithData:(IQVAdModel *)data withZoneID:(NSString *)zoneID;
 - (instancetype)initWithAssetGroup:(NSInteger)assetGroup withAdContent:(NSString *)adContent withAdType:(NSInteger)adType;
 - (IQVDataModel *)assetDataWithType:(NSString *)type;
+- (IQVOpenRTBDataModel *)openRTBAssetDataWithType:(NSString *)type;
 - (IQVDataModel *)metaDataWithType:(NSString *)type;
 - (NSArray *)beaconsDataWithType:(NSString *)type;
 - (IQVSkAdNetworkModel *)getSkAdNetworkModel;
+- (IQVSkAdNetworkModel *)getOpenRTBSkAdNetworkModel;
 
 @end
