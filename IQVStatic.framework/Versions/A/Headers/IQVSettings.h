@@ -26,6 +26,12 @@
 #import <AppTrackingTransparency/AppTrackingTransparency.h>
 #import "IQVTargetingModel.h"
 
+typedef enum {
+    IQVAudioStatusMuted,
+    IQVAudioStatusON,
+    IQVAudioStatusDefault
+} IQVAudioStatus;
+
 @interface IQVSettings : NSObject
 
 // CONFIGURABLE PARAMETERS
@@ -37,6 +43,7 @@
 @property (nonatomic, strong) NSString *openRtbApiURL;
 @property (nonatomic, strong) NSString *appID;
 @property (nonatomic, assign) NSInteger skipOffset;
+@property (nonatomic, assign) IQVAudioStatus audioStatus;
 
 // COMMON PARAMETERS
 @property (readonly) NSString *advertisingId;

@@ -62,7 +62,7 @@ const updateCreativeSize = function (width, height) {
     elementToScaleFound = false;
     let parent_height = height;
     let parent_width = width;
-    let ad_container = document.getElementById('hybid-ad');
+    let ad_container = document.getElementById('IQV-ad');
     findElementBySize(ad_container, 320, 480);
 
     if (elementToScaleFound && elementToScale != null) {
