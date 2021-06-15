@@ -72,7 +72,6 @@ FOUNDATION_EXPORT const unsigned char IQVVersionString[];
 #import <IQVStatic/IQVAdSize.h>
 #import <IQVStatic/IQVSignalDataProcessor.h>
 #import <IQVStatic/IQVRewardedAd.h>
-#import <IQVStatic/IQVOpenRTBDataModel.h>
 #import <IQVStatic/IQVReportingManager.h>
 #import <IQVStatic/IQVReporting.h>
 #import <IQVStatic/IQVReportingEvent.h>
@@ -90,6 +89,7 @@ typedef void (^IQVCompletionBlock)(BOOL);
 + (void)setAppStoreAppID:(NSString *)appID;
 + (NSString *)sdkVersion;
 + (void)setInterstitialSkipOffset:(NSInteger)seconds;
++ (void)setInterstitialCloseOnFinish:(BOOL)closeOnFinish;
 + (IQVReportingManager *)reportingManager;
 + (void)setVideoAudioStatus:(IQVAudioStatus)audioStatus;
 

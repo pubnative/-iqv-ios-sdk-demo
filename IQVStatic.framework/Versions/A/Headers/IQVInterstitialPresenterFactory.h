@@ -28,6 +28,7 @@
 
 - (IQVInterstitialPresenter *)createInterstitalPresenterWithAd:(IQVAd *)ad
                                                   withSkipOffset:(NSUInteger)skipOffset
+                                               withCloseOnFinish: (BOOL)closeOnFinish
                                                     withDelegate:(NSObject<IQVInterstitialPresenterDelegate> *)delegate;
 
 @end
