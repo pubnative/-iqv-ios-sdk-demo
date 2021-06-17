@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -16,7 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eT5-JV-bko">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eT5-JV-bko">
                                 <rect key="frame" x="20" y="64" width="374" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" title="Load Banner"/>
@@ -26,14 +27,15 @@
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gmO-hN-8it" customClass="IQVAdView">
                                 <rect key="frame" x="47" y="106" width="320" height="50"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="320" id="XRH-dV-cP5"/>
                                     <constraint firstAttribute="height" constant="50" id="wyf-DS-OQD"/>
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="gmO-hN-8it" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="4BZ-Xq-aaR"/>
                             <constraint firstItem="eT5-JV-bko" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="QmP-ug-EP2"/>
@@ -42,7 +44,6 @@
                             <constraint firstItem="eT5-JV-bko" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="20" id="vTa-KA-5LA"/>
                             <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="eT5-JV-bko" secondAttribute="trailing" constant="20" id="yyA-q8-nlR"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Banner" image="b.square.fill" catalog="system" id="acW-dT-cKf"/>
                     <connections>
@@ -51,7 +52,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1274" y="-639"/>
+            <point key="canvasLocation" x="1297" y="1"/>
         </scene>
         <!--MRect-->
         <scene sceneID="wg7-f3-ORb">
@@ -61,7 +62,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Egt-g7-7Wb">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Egt-g7-7Wb">
                                 <rect key="frame" x="20" y="64" width="374" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" title="Load MRect"/>
@@ -71,14 +72,15 @@
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VUA-iL-pRI" customClass="IQVAdView">
                                 <rect key="frame" x="57" y="106" width="300" height="250"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="250" id="VSt-nb-M8j"/>
                                     <constraint firstAttribute="width" constant="300" id="ww2-xe-ftn"/>
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="VUA-iL-pRI" firstAttribute="top" secondItem="Egt-g7-7Wb" secondAttribute="bottom" constant="8" id="8xI-fc-w5S"/>
                             <constraint firstItem="O1u-W8-tvY" firstAttribute="trailing" secondItem="Egt-g7-7Wb" secondAttribute="trailing" constant="20" id="9on-LQ-8vW"/>
@@ -87,7 +89,6 @@
                             <constraint firstItem="VUA-iL-pRI" firstAttribute="centerX" secondItem="QS5-Rx-YEW" secondAttribute="centerX" id="W8w-HL-UvA"/>
                             <constraint firstItem="Egt-g7-7Wb" firstAttribute="centerX" secondItem="QS5-Rx-YEW" secondAttribute="centerX" id="jHp-El-CTX"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="MRect" image="m.square.fill" catalog="system" id="cPa-gy-q4n"/>
                     <connections>
@@ -96,7 +97,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1297" y="19"/>
+            <point key="canvasLocation" x="2022" y="0.0"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -112,6 +113,7 @@
                         <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
                         <segue destination="kWO-0A-xte" kind="relationship" relationship="viewControllers" id="SDO-1y-ga9"/>
                         <segue destination="zyN-ot-4fE" kind="relationship" relationship="viewControllers" id="HH7-0S-ZiV"/>
+                        <segue destination="Gim-dl-lMD" kind="relationship" relationship="viewControllers" id="WhM-oE-tIA"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
@@ -126,7 +128,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aY0-90-EVZ">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aY0-90-EVZ">
                                 <rect key="frame" x="20" y="64" width="374" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" title="Load Interstitial"/>
@@ -136,20 +138,20 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="w1h-2C-7oY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="w1h-2C-7oY" firstAttribute="trailing" secondItem="aY0-90-EVZ" secondAttribute="trailing" constant="20" id="1BM-8F-VZX"/>
                             <constraint firstItem="aY0-90-EVZ" firstAttribute="leading" secondItem="w1h-2C-7oY" secondAttribute="leading" constant="20" id="1lO-51-CU1"/>
                             <constraint firstItem="aY0-90-EVZ" firstAttribute="centerX" secondItem="AHw-SJ-6BX" secondAttribute="centerX" id="6fK-Wx-H28"/>
                             <constraint firstItem="aY0-90-EVZ" firstAttribute="top" secondItem="w1h-2C-7oY" secondAttribute="top" constant="20" id="Z3f-uc-shh"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="w1h-2C-7oY"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Interstitial" image="i.square.fill" catalog="system" id="ltg-N4-Fyo" userLabel="Interstitial"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1bh-Rf-Ygg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1328" y="693"/>
+            <point key="canvasLocation" x="2739" y="0.0"/>
         </scene>
         <!--Video Interstitial-->
         <scene sceneID="cBw-qR-oda">
@@ -159,7 +161,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="azm-5E-QSl">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="azm-5E-QSl">
                                 <rect key="frame" x="20" y="64" width="374" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" title="Load Video Interstitial"/>
@@ -168,20 +170,67 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="4PZ-0Z-g2C"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="azm-5E-QSl" firstAttribute="leading" secondItem="4PZ-0Z-g2C" secondAttribute="leading" constant="20" id="6W7-ZN-iJj"/>
                             <constraint firstItem="4PZ-0Z-g2C" firstAttribute="trailing" secondItem="azm-5E-QSl" secondAttribute="trailing" constant="20" id="F6j-pc-dgh"/>
                             <constraint firstItem="azm-5E-QSl" firstAttribute="top" secondItem="4PZ-0Z-g2C" secondAttribute="top" constant="20" id="Isq-Fb-Jfq"/>
                             <constraint firstItem="azm-5E-QSl" firstAttribute="centerX" secondItem="08K-MR-rUJ" secondAttribute="centerX" id="Kmv-xn-g24"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="4PZ-0Z-g2C"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Video Interstitial" image="v.square.fill" catalog="system" id="aop-aQ-XzZ"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jzt-Is-LpM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1296" y="1426"/>
+            <point key="canvasLocation" x="3458" y="0.0"/>
+        </scene>
+        <!--Video Rewarded-->
+        <scene sceneID="L1T-ja-cRa">
+            <objects>
+                <viewController id="Gim-dl-lMD" userLabel="Video Rewarded" customClass="VideoRewardedViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aMT-O1-Gvw">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MDh-3M-dS6">
+                                <rect key="frame" x="20" y="64" width="374" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Load Video Rewarded"/>
+                                <connections>
+                                    <action selector="requestRewardedTouchUpInside:" destination="Gim-dl-lMD" eventType="touchUpInside" id="VOj-9e-Gbq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6yw-a6-2Ax">
+                                <rect key="frame" x="20" y="106" width="374" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Show Video Rewarded"/>
+                                <connections>
+                                    <action selector="showRewardedTouchUpInside:" destination="Gim-dl-lMD" eventType="touchUpInside" id="jbg-zN-4bh"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6gp-ub-jr2"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6gp-ub-jr2" firstAttribute="trailing" secondItem="MDh-3M-dS6" secondAttribute="trailing" constant="20" id="8IE-Rl-Q4D"/>
+                            <constraint firstItem="6yw-a6-2Ax" firstAttribute="top" secondItem="MDh-3M-dS6" secondAttribute="bottom" constant="8" id="O2s-gT-hzN"/>
+                            <constraint firstItem="MDh-3M-dS6" firstAttribute="top" secondItem="6gp-ub-jr2" secondAttribute="top" constant="20" id="ac8-c3-PZy"/>
+                            <constraint firstItem="6yw-a6-2Ax" firstAttribute="leading" secondItem="6gp-ub-jr2" secondAttribute="leading" constant="20" id="qSp-aY-Ivt"/>
+                            <constraint firstItem="6gp-ub-jr2" firstAttribute="trailing" secondItem="6yw-a6-2Ax" secondAttribute="trailing" constant="20" id="uCa-ko-82c"/>
+                            <constraint firstItem="MDh-3M-dS6" firstAttribute="leading" secondItem="6gp-ub-jr2" secondAttribute="leading" constant="20" id="vX5-Sr-WeO"/>
+                            <constraint firstItem="MDh-3M-dS6" firstAttribute="centerX" secondItem="aMT-O1-Gvw" secondAttribute="centerX" id="ypK-qs-uvh"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Video Rewarded" image="v.square.fill" catalog="system" id="nXT-Sp-cYb"/>
+                    <connections>
+                        <outlet property="loadAdButton" destination="MDh-3M-dS6" id="o1a-AG-oyE"/>
+                        <outlet property="showAdButton" destination="6yw-a6-2Ax" id="4FD-dP-szU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yGg-1S-Epd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4159" y="1"/>
         </scene>
     </scenes>
     <resources>
@@ -189,5 +238,8 @@
         <image name="i.square.fill" catalog="system" width="128" height="114"/>
         <image name="m.square.fill" catalog="system" width="128" height="114"/>
         <image name="v.square.fill" catalog="system" width="128" height="114"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>

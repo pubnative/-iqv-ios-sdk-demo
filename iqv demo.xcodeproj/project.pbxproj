@@ -21,6 +21,7 @@
 		6F1EAF4B263029CD006AD8A1 /* omsdk.js in Resources */ = {isa = PBXBuildFile; fileRef = 6F1EAF4A263029CD006AD8A1 /* omsdk.js */; };
 		6F475DB726796046002D3361 /* iqv.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6F475DB526796045002D3361 /* iqv.bundle */; };
 		6F475DB826796046002D3361 /* IQVStatic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F475DB626796046002D3361 /* IQVStatic.framework */; };
+		6F86F868267B4CA70065C4A3 /* VideoRewardedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F86F867267B4CA70065C4A3 /* VideoRewardedViewController.m */; };
 		7E6349E02488FE8000B30DFE /* VideoInterstitialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E6349DF2488FE8000B30DFE /* VideoInterstitialViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -60,6 +61,8 @@
 		6F1EAF4A263029CD006AD8A1 /* omsdk.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = omsdk.js; sourceTree = "<group>"; };
 		6F475DB526796045002D3361 /* iqv.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = iqv.bundle; sourceTree = "<group>"; };
 		6F475DB626796046002D3361 /* IQVStatic.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IQVStatic.framework; sourceTree = "<group>"; };
+		6F86F866267B4CA70065C4A3 /* VideoRewardedViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoRewardedViewController.h; sourceTree = "<group>"; };
+		6F86F867267B4CA70065C4A3 /* VideoRewardedViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoRewardedViewController.m; sourceTree = "<group>"; };
 		7E6349DE2488FE8000B30DFE /* VideoInterstitialViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoInterstitialViewController.h; sourceTree = "<group>"; };
 		7E6349DF2488FE8000B30DFE /* VideoInterstitialViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoInterstitialViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -140,6 +143,8 @@
 				54E93E0E243BCA0200178BBF /* MRectViewController.m */,
 				7E6349DE2488FE8000B30DFE /* VideoInterstitialViewController.h */,
 				7E6349DF2488FE8000B30DFE /* VideoInterstitialViewController.m */,
+				6F86F866267B4CA70065C4A3 /* VideoRewardedViewController.h */,
+				6F86F867267B4CA70065C4A3 /* VideoRewardedViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -236,6 +241,7 @@
 				54E93E19243BCA0200178BBF /* MRectViewController.m in Sources */,
 				7E6349E02488FE8000B30DFE /* VideoInterstitialViewController.m in Sources */,
 				54E93E12243BCA0200178BBF /* AdSdkDemoSettings.m in Sources */,
+				6F86F868267B4CA70065C4A3 /* VideoRewardedViewController.m in Sources */,
 				54E93E13243BCA0200178BBF /* BannerViewController.m in Sources */,
 				54E93E11243BCA0200178BBF /* SceneDelegate.m in Sources */,
 				54E93E18243BCA0200178BBF /* InterstitialViewController.m in Sources */,
